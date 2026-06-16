@@ -5,6 +5,9 @@ namespace Visual.Programming.Project.Grey
         public Form1()
         {
             InitializeComponent();
+
+
+            
         }
     }
 }
