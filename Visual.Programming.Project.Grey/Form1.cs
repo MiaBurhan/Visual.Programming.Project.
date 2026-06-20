@@ -19,7 +19,32 @@ namespace Visual.Programming.Project.Grey
             InitializeComponent();
 
 
-            
+
+
+        }
+
+        private void lblBackToTop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelFooter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }
