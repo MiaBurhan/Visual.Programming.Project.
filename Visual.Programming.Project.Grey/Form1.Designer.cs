@@ -90,7 +90,7 @@
             btnShopNow.ForeColor = Color.White;
             btnShopNow.Location = new Point(20, 130);
             btnShopNow.Name = "btnShopNow";
-            btnShopNow.Size = new Size(112, 34);
+            btnShopNow.Size = new Size(112, 37);
             btnShopNow.TabIndex = 3;
             btnShopNow.Text = "Shop Electronics >";
             btnShopNow.UseVisualStyleBackColor = false;
