@@ -16,6 +16,10 @@ namespace Visual.Programming.Project.Grey
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            InitializeComponent();
+
+
+            
 
         }
     }
