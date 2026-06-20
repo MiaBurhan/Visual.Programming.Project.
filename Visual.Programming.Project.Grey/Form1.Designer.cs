@@ -36,7 +36,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
             label1.Location = new Point(529, 411);
+=======
+            label1.Location = new Point(209, 192);
+>>>>>>> cc3ee42753d854881b8b4412bf190c43a17eff82
 =======
             label1.Location = new Point(209, 192);
 >>>>>>> cc3ee42753d854881b8b4412bf190c43a17eff82
