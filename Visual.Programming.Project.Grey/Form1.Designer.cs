@@ -38,12 +38,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
             label1.Location = new Point(529, 411);
-=======
-            label1.Location = new Point(209, 192);
->>>>>>> cc3ee42753d854881b8b4412bf190c43a17eff82
-=======
-            label1.Location = new Point(209, 192);
->>>>>>> cc3ee42753d854881b8b4412bf190c43a17eff82
             label1.Name = "label1";
             label1.Size = new Size(259, 30);
             label1.TabIndex = 0;
