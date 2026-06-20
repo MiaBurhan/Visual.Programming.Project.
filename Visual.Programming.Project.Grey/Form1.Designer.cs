@@ -35,8 +35,6 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-<<<<<<< HEAD
-<<<<<<< HEAD
             label1.Location = new Point(529, 411);
             label1.Name = "label1";
             label1.Size = new Size(259, 30);
