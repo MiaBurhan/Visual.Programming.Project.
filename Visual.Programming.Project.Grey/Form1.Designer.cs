@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             panelBanner = new Panel();
+            panel5 = new Panel();
+            button8 = new Button();
+            button7 = new Button();
+            button6 = new Button();
+            button5 = new Button();
+            button4 = new Button();
             pictureBox4 = new PictureBox();
             btnShopNow = new Button();
             lblSubtitle = new Label();
@@ -93,13 +99,8 @@
             label32 = new Label();
             label31 = new Label();
             ShopHub = new Label();
-            panel5 = new Panel();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
             panelBanner.SuspendLayout();
+            panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panelPerks.SuspendLayout();
             flowProducts.SuspendLayout();
@@ -114,12 +115,10 @@
             panelBackToTop.SuspendLayout();
             panelFooter.SuspendLayout();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panelBanner
             // 
-            panelBanner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelBanner.BackColor = Color.FromArgb(35, 47, 62);
             panelBanner.Controls.Add(panel5);
             panelBanner.Controls.Add(pictureBox4);
@@ -129,8 +128,87 @@
             panelBanner.Controls.Add(lblLimitedTime);
             panelBanner.Location = new Point(20, 75);
             panelBanner.Name = "panelBanner";
-            panelBanner.Size = new Size(951, 180);
+            panelBanner.Size = new Size(919, 180);
             panelBanner.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(button8);
+            panel5.Controls.Add(button7);
+            panel5.Controls.Add(button6);
+            panel5.Controls.Add(button5);
+            panel5.Controls.Add(button4);
+            panel5.Location = new Point(3, 15);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(694, 43);
+            panel5.TabIndex = 5;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.FromArgb(35, 47, 62);
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(569, 0);
+            button8.Name = "button8";
+            button8.Size = new Size(112, 34);
+            button8.TabIndex = 8;
+            button8.Text = "Acount";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
+            // button7
+            // 
+            button7.BackColor = Color.FromArgb(35, 47, 62);
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(437, 3);
+            button7.Name = "button7";
+            button7.Size = new Size(112, 34);
+            button7.TabIndex = 7;
+            button7.Text = "Cart ";
+            button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(35, 47, 62);
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(291, 3);
+            button6.Name = "button6";
+            button6.Size = new Size(112, 34);
+            button6.TabIndex = 6;
+            button6.Text = "Products";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(35, 47, 62);
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(149, 3);
+            button5.Name = "button5";
+            button5.Size = new Size(112, 34);
+            button5.TabIndex = 5;
+            button5.Text = "Deals";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(35, 47, 62);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(4, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(112, 34);
+            button4.TabIndex = 0;
+            button4.Text = "Home";
+            button4.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
@@ -195,7 +273,7 @@
             panelPerks.Controls.Add(lblPerks);
             panelPerks.Location = new Point(23, 261);
             panelPerks.Name = "panelPerks";
-            panelPerks.Size = new Size(940, 46);
+            panelPerks.Size = new Size(926, 46);
             panelPerks.TabIndex = 1;
             panelPerks.Paint += panel1_Paint;
             // 
@@ -788,6 +866,7 @@
             // 
             // panel4
             // 
+            panel4.AutoSize = true;
             panel4.BackColor = Color.FromArgb(19, 25, 33);
             panel4.Controls.Add(label33);
             panel4.Controls.Add(comboBox1);
@@ -852,90 +931,13 @@
             ShopHub.TabIndex = 0;
             ShopHub.Text = "ShopHub";
             // 
-            // panel5
-            // 
-            panel5.Controls.Add(button8);
-            panel5.Controls.Add(button7);
-            panel5.Controls.Add(button6);
-            panel5.Controls.Add(button5);
-            panel5.Controls.Add(button4);
-            panel5.Location = new Point(3, 15);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(694, 43);
-            panel5.TabIndex = 5;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(35, 47, 62);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(4, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 34);
-            button4.TabIndex = 0;
-            button4.Text = "Home";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(35, 47, 62);
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(149, 3);
-            button5.Name = "button5";
-            button5.Size = new Size(112, 34);
-            button5.TabIndex = 5;
-            button5.Text = "Deals";
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(35, 47, 62);
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(291, 3);
-            button6.Name = "button6";
-            button6.Size = new Size(112, 34);
-            button6.TabIndex = 6;
-            button6.Text = "Products";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.FromArgb(35, 47, 62);
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(437, 3);
-            button7.Name = "button7";
-            button7.Size = new Size(112, 34);
-            button7.TabIndex = 7;
-            button7.Text = "Order";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.FromArgb(35, 47, 62);
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(569, 0);
-            button8.Name = "button8";
-            button8.Size = new Size(112, 34);
-            button8.TabIndex = 8;
-            button8.Text = "Acount";
-            button8.UseVisualStyleBackColor = false;
-            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
-            ClientSize = new Size(1074, 1050);
+            ClientSize = new Size(962, 1050);
             Controls.Add(panel4);
             Controls.Add(flowProducts);
             Controls.Add(panelPerks);
@@ -946,6 +948,7 @@
             Load += Form1_Load;
             panelBanner.ResumeLayout(false);
             panelBanner.PerformLayout();
+            panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panelPerks.ResumeLayout(false);
             panelPerks.PerformLayout();
@@ -968,8 +971,8 @@
             panelFooter.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            panel5.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

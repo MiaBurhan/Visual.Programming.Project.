@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountForm));
             lblAccountTitle = new Label();
             panelProfile = new Panel();
-            label1 = new Label();
-            label2 = new Label();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
             panelProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -59,6 +59,22 @@
             panelProfile.Size = new Size(455, 243);
             panelProfile.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(100, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(249, 183);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 23);
+            label2.TabIndex = 4;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -69,27 +85,6 @@
             label1.Size = new Size(81, 26);
             label1.TabIndex = 1;
             label1.Text = "Admin";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(168, 215);
-            label2.Name = "label2";
-            label2.Size = new Size(132, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Admin123@gmail.com";
-            label2.Click += this.label2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(123, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(249, 183);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
             // 
             // AccountForm
             // 
