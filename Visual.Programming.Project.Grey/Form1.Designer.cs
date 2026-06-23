@@ -77,9 +77,10 @@
             panelBanner.Controls.Add(lblSubtitle);
             panelBanner.Controls.Add(label1);
             panelBanner.Controls.Add(lblLimitedTime);
-            panelBanner.Location = new Point(20, 20);
+            panelBanner.Location = new Point(14, 14);
+            panelBanner.Margin = new Padding(2, 2, 2, 2);
             panelBanner.Name = "panelBanner";
-            panelBanner.Size = new Size(940, 180);
+            panelBanner.Size = new Size(658, 122);
             panelBanner.TabIndex = 0;
             // 
             // btnShopNow
@@ -88,9 +89,10 @@
             btnShopNow.FlatStyle = FlatStyle.Flat;
             btnShopNow.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnShopNow.ForeColor = Color.White;
-            btnShopNow.Location = new Point(20, 130);
+            btnShopNow.Location = new Point(14, 88);
+            btnShopNow.Margin = new Padding(2, 2, 2, 2);
             btnShopNow.Name = "btnShopNow";
-            btnShopNow.Size = new Size(112, 37);
+            btnShopNow.Size = new Size(78, 25);
             btnShopNow.TabIndex = 3;
             btnShopNow.Text = "Shop Electronics >";
             btnShopNow.UseVisualStyleBackColor = false;
@@ -100,22 +102,22 @@
             lblSubtitle.AutoSize = true;
             lblSubtitle.Font = new Font("Segoe UI", 12F);
             lblSubtitle.ForeColor = Color.Gray;
-            lblSubtitle.Location = new Point(18, 95);
+            lblSubtitle.Location = new Point(13, 65);
+            lblSubtitle.Margin = new Padding(2, 0, 2, 0);
             lblSubtitle.Name = "lblSubtitle";
-            lblSubtitle.Size = new Size(284, 32);
+            lblSubtitle.Size = new Size(184, 21);
             lblSubtitle.TabIndex = 2;
             lblSubtitle.Text = "Up to 40% off electronics";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(529, 411);
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(18, 38);
+            label1.Location = new Point(13, 26);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(166, 25);
+            label1.Size = new Size(110, 15);
             label1.TabIndex = 1;
             label1.Text = "Summer Tech Sale";
             // 
@@ -124,9 +126,10 @@
             lblLimitedTime.AutoSize = true;
             lblLimitedTime.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLimitedTime.ForeColor = Color.FromArgb(255, 153, 0);
-            lblLimitedTime.Location = new Point(20, 15);
+            lblLimitedTime.Location = new Point(14, 10);
+            lblLimitedTime.Margin = new Padding(2, 0, 2, 0);
             lblLimitedTime.Name = "lblLimitedTime";
-            lblLimitedTime.Size = new Size(133, 25);
+            lblLimitedTime.Size = new Size(85, 15);
             lblLimitedTime.TabIndex = 0;
             lblLimitedTime.Text = "LIMITED TIME";
             // 
@@ -135,9 +138,10 @@
             panelPerks.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelPerks.BackColor = Color.FromArgb(243, 243, 243);
             panelPerks.Controls.Add(lblPerks);
-            panelPerks.Location = new Point(19, 215);
+            panelPerks.Location = new Point(13, 146);
+            panelPerks.Margin = new Padding(2, 2, 2, 2);
             panelPerks.Name = "panelPerks";
-            panelPerks.Size = new Size(940, 40);
+            panelPerks.Size = new Size(658, 27);
             panelPerks.TabIndex = 1;
             panelPerks.Paint += panel1_Paint;
             // 
@@ -146,9 +150,10 @@
             lblPerks.AutoSize = true;
             lblPerks.Font = new Font("Segoe UI", 8F);
             lblPerks.ForeColor = Color.FromArgb(255, 153, 0);
-            lblPerks.Location = new Point(15, 12);
+            lblPerks.Location = new Point(10, 8);
+            lblPerks.Margin = new Padding(2, 0, 2, 0);
             lblPerks.Name = "lblPerks";
-            lblPerks.Size = new Size(742, 21);
+            lblPerks.Size = new Size(543, 13);
             lblPerks.TabIndex = 0;
             lblPerks.Text = "Free shipping on orders $35+    •    A-to-Z Guarantee    •    Easy 30-day returns    •    Daily deals & discounts";
             // 
@@ -156,9 +161,10 @@
             // 
             lblBestSellers.AutoSize = true;
             lblBestSellers.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBestSellers.Location = new Point(20, 270);
+            lblBestSellers.Location = new Point(14, 184);
+            lblBestSellers.Margin = new Padding(2, 0, 2, 0);
             lblBestSellers.Name = "lblBestSellers";
-            lblBestSellers.Size = new Size(109, 25);
+            lblBestSellers.Size = new Size(72, 15);
             lblBestSellers.TabIndex = 2;
             lblBestSellers.Text = "Best Sellers";
             // 
@@ -169,9 +175,10 @@
             flowProducts.Controls.Add(panelCard1);
             flowProducts.Controls.Add(panel1);
             flowProducts.Controls.Add(panel2);
-            flowProducts.Location = new Point(20, 310);
+            flowProducts.Location = new Point(14, 211);
+            flowProducts.Margin = new Padding(2, 2, 2, 2);
             flowProducts.Name = "flowProducts";
-            flowProducts.Size = new Size(940, 339);
+            flowProducts.Size = new Size(658, 231);
             flowProducts.TabIndex = 3;
             // 
             // panelCard1
@@ -184,10 +191,10 @@
             panelCard1.Controls.Add(lblName1);
             panelCard1.Controls.Add(lblCategory1);
             panelCard1.Controls.Add(picProduct1);
-            panelCard1.Location = new Point(10, 10);
-            panelCard1.Margin = new Padding(10);
+            panelCard1.Location = new Point(7, 7);
+            panelCard1.Margin = new Padding(7, 7, 7, 7);
             panelCard1.Name = "panelCard1";
-            panelCard1.Size = new Size(290, 300);
+            panelCard1.Size = new Size(204, 205);
             panelCard1.TabIndex = 0;
             // 
             // btnAddToCart1
@@ -196,9 +203,10 @@
             btnAddToCart1.FlatStyle = FlatStyle.Flat;
             btnAddToCart1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddToCart1.ForeColor = Color.White;
-            btnAddToCart1.Location = new Point(10, 261);
+            btnAddToCart1.Location = new Point(7, 177);
+            btnAddToCart1.Margin = new Padding(2, 2, 2, 2);
             btnAddToCart1.Name = "btnAddToCart1";
-            btnAddToCart1.Size = new Size(270, 34);
+            btnAddToCart1.Size = new Size(189, 23);
             btnAddToCart1.TabIndex = 5;
             btnAddToCart1.Text = "Add to Cart";
             btnAddToCart1.UseVisualStyleBackColor = false;
@@ -207,9 +215,10 @@
             // 
             lblPrice1.AutoSize = true;
             lblPrice1.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPrice1.Location = new Point(15, 222);
+            lblPrice1.Location = new Point(10, 151);
+            lblPrice1.Margin = new Padding(2, 0, 2, 0);
             lblPrice1.Name = "lblPrice1";
-            lblPrice1.Size = new Size(112, 36);
+            lblPrice1.Size = new Size(77, 25);
             lblPrice1.TabIndex = 4;
             lblPrice1.Text = "$279.99";
             // 
@@ -217,17 +226,19 @@
             // 
             lblRating1.AutoSize = true;
             lblRating1.ForeColor = Color.FromArgb(255, 153, 0);
-            lblRating1.Location = new Point(76, 199);
+            lblRating1.Location = new Point(53, 135);
+            lblRating1.Margin = new Padding(2, 0, 2, 0);
             lblRating1.Name = "lblRating1";
-            lblRating1.Size = new Size(130, 25);
+            lblRating1.Size = new Size(94, 17);
             lblRating1.TabIndex = 3;
             lblRating1.Text = "★ 4.8  (12,430)";
             // 
             // lblName1
             // 
-            lblName1.Location = new Point(10, 168);
+            lblName1.Location = new Point(7, 114);
+            lblName1.Margin = new Padding(2, 0, 2, 0);
             lblName1.Name = "lblName1";
-            lblName1.Size = new Size(270, 40);
+            lblName1.Size = new Size(189, 27);
             lblName1.TabIndex = 2;
             lblName1.Text = "Sony WH-1000XM5 Wireless Headphones";
             // 
@@ -236,9 +247,10 @@
             lblCategory1.AutoSize = true;
             lblCategory1.Font = new Font("Segoe UI", 8F);
             lblCategory1.ForeColor = Color.FromArgb(0, 113, 133);
-            lblCategory1.Location = new Point(10, 148);
+            lblCategory1.Location = new Point(7, 101);
+            lblCategory1.Margin = new Padding(2, 0, 2, 0);
             lblCategory1.Name = "lblCategory1";
-            lblCategory1.Size = new Size(84, 21);
+            lblCategory1.Size = new Size(62, 13);
             lblCategory1.TabIndex = 1;
             lblCategory1.Text = "Electronics";
             // 
@@ -246,8 +258,9 @@
             // 
             picProduct1.BackColor = Color.FromArgb(252, 233, 200);
             picProduct1.Location = new Point(0, 0);
+            picProduct1.Margin = new Padding(2, 2, 2, 2);
             picProduct1.Name = "picProduct1";
-            picProduct1.Size = new Size(288, 142);
+            picProduct1.Size = new Size(202, 97);
             picProduct1.TabIndex = 0;
             picProduct1.TabStop = false;
             // 
@@ -261,10 +274,10 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(320, 10);
-            panel1.Margin = new Padding(10);
+            panel1.Location = new Point(225, 7);
+            panel1.Margin = new Padding(7, 7, 7, 7);
             panel1.Name = "panel1";
-            panel1.Size = new Size(290, 300);
+            panel1.Size = new Size(204, 205);
             panel1.TabIndex = 1;
             // 
             // button1
@@ -273,9 +286,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(10, 265);
+            button1.Location = new Point(7, 180);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(270, 32);
+            button1.Size = new Size(189, 22);
             button1.TabIndex = 5;
             button1.Text = "Add to Cart";
             button1.UseVisualStyleBackColor = false;
@@ -284,9 +298,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(21, 224);
+            label2.Location = new Point(15, 152);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(104, 36);
+            label2.Size = new Size(72, 25);
             label2.TabIndex = 4;
             label2.Text = " $59.99";
             // 
@@ -294,17 +309,19 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.FromArgb(255, 153, 0);
-            label3.Location = new Point(80, 199);
+            label3.Location = new Point(56, 135);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(130, 25);
+            label3.Size = new Size(94, 17);
             label3.TabIndex = 3;
             label3.Text = "★ 4.8  (89,340)";
             // 
             // label4
             // 
-            label4.Location = new Point(10, 168);
+            label4.Location = new Point(7, 114);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(270, 40);
+            label4.Size = new Size(189, 27);
             label4.TabIndex = 2;
             label4.Text = "Instant Pot Duo 7-in-1 Pressure Cooker";
             // 
@@ -313,9 +330,10 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 8F);
             label5.ForeColor = Color.FromArgb(0, 113, 133);
-            label5.Location = new Point(10, 148);
+            label5.Location = new Point(7, 101);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(61, 21);
+            label5.Size = new Size(45, 13);
             label5.TabIndex = 1;
             label5.Text = "Kitchen";
             // 
@@ -323,8 +341,9 @@
             // 
             pictureBox1.BackColor = Color.FromArgb(252, 233, 200);
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(288, 142);
+            pictureBox1.Size = new Size(202, 97);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -338,10 +357,10 @@
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(630, 10);
-            panel2.Margin = new Padding(10);
+            panel2.Location = new Point(443, 7);
+            panel2.Margin = new Padding(7, 7, 7, 7);
             panel2.Name = "panel2";
-            panel2.Size = new Size(290, 300);
+            panel2.Size = new Size(204, 205);
             panel2.TabIndex = 2;
             // 
             // button2
@@ -350,9 +369,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(10, 263);
+            button2.Location = new Point(7, 179);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(270, 32);
+            button2.Size = new Size(189, 22);
             button2.TabIndex = 5;
             button2.Text = "Add to Cart";
             button2.UseVisualStyleBackColor = false;
@@ -361,9 +381,10 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(10, 224);
+            label6.Location = new Point(7, 152);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(112, 36);
+            label6.Size = new Size(77, 25);
             label6.TabIndex = 4;
             label6.Text = "$139.99";
             // 
@@ -371,17 +392,19 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.FromArgb(255, 153, 0);
-            label7.Location = new Point(72, 199);
+            label7.Location = new Point(50, 135);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(130, 25);
+            label7.Size = new Size(94, 17);
             label7.TabIndex = 3;
             label7.Text = "★ 4.8  (45,600)";
             // 
             // label8
             // 
-            label8.Location = new Point(10, 168);
+            label8.Location = new Point(7, 114);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(270, 40);
+            label8.Size = new Size(189, 27);
             label8.TabIndex = 2;
             label8.Text = "Kindle Paperwhite 11th Gen";
             // 
@@ -390,9 +413,10 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 8F);
             label9.ForeColor = Color.FromArgb(0, 113, 133);
-            label9.Location = new Point(10, 148);
+            label9.Location = new Point(7, 101);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(84, 21);
+            label9.Size = new Size(62, 13);
             label9.TabIndex = 1;
             label9.Text = "Electronics";
             // 
@@ -400,22 +424,22 @@
             // 
             pictureBox2.BackColor = Color.FromArgb(252, 233, 200);
             pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(2, 2, 2, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(288, 142);
+            pictureBox2.Size = new Size(202, 97);
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
             // HomeForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(978, 663);
+            ClientSize = new Size(685, 451);
             Controls.Add(flowProducts);
             Controls.Add(lblBestSellers);
             Controls.Add(panelPerks);
             Controls.Add(panelBanner);
-            Margin = new Padding(4);
             Name = "HomeForm";
             Text = "ShopHub_HOME";
             Load += Form1_Load;
