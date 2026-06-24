@@ -250,7 +250,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(3, 86);
             label1.Name = "label1";
-            label1.Size = new Size(364, 54);
+            label1.Size = new Size(249, 37);
             label1.TabIndex = 1;
             label1.Text = "Summer Tech Sale";
             label1.Click += label1_Click_1;
@@ -273,7 +273,7 @@
             panelPerks.Controls.Add(lblPerks);
             panelPerks.Location = new Point(23, 261);
             panelPerks.Name = "panelPerks";
-            panelPerks.Size = new Size(926, 46);
+            panelPerks.Size = new Size(935, 46);
             panelPerks.TabIndex = 1;
             panelPerks.Paint += panel1_Paint;
             // 
@@ -285,7 +285,7 @@
             lblPerks.Location = new Point(10, 8);
             lblPerks.Margin = new Padding(2, 0, 2, 0);
             lblPerks.Name = "lblPerks";
-            lblPerks.Size = new Size(878, 28);
+            lblPerks.Size = new Size(613, 19);
             lblPerks.TabIndex = 0;
             lblPerks.Text = "Free shipping on orders $35+ •  A-to-Z Guarantee   •  Easy 30-day returns  •  Daily deals";
             // 
@@ -324,7 +324,7 @@
             panelCard1.Controls.Add(lblCategory1);
             panelCard1.Controls.Add(picProduct1);
             panelCard1.Location = new Point(7, 7);
-            panelCard1.Margin = new Padding(7, 7, 7, 7);
+            panelCard1.Margin = new Padding(7);
             panelCard1.Name = "panelCard1";
             panelCard1.Size = new Size(204, 205);
             panelCard1.TabIndex = 0;
@@ -336,7 +336,7 @@
             btnAddToCart1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddToCart1.ForeColor = Color.White;
             btnAddToCart1.Location = new Point(7, 177);
-            btnAddToCart1.Margin = new Padding(2, 2, 2, 2);
+            btnAddToCart1.Margin = new Padding(2);
             btnAddToCart1.Name = "btnAddToCart1";
             btnAddToCart1.Size = new Size(189, 23);
             btnAddToCart1.TabIndex = 5;
@@ -409,7 +409,7 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(225, 7);
-            panel1.Margin = new Padding(7, 7, 7, 7);
+            panel1.Margin = new Padding(7);
             panel1.Name = "panel1";
             panel1.Size = new Size(204, 205);
             panel1.TabIndex = 1;
@@ -421,7 +421,7 @@
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
             button1.Location = new Point(7, 180);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(189, 22);
             button1.TabIndex = 5;
@@ -476,7 +476,7 @@
             pictureBox1.BackColor = Color.FromArgb(252, 233, 200);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(288, 142);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -495,7 +495,7 @@
             panel2.Controls.Add(label9);
             panel2.Controls.Add(pictureBox2);
             panel2.Location = new Point(443, 7);
-            panel2.Margin = new Padding(7, 7, 7, 7);
+            panel2.Margin = new Padding(7);
             panel2.Name = "panel2";
             panel2.Size = new Size(204, 205);
             panel2.TabIndex = 2;
@@ -535,7 +535,7 @@
             label10.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.Location = new Point(10, 224);
             label10.Name = "label10";
-            label10.Size = new Size(112, 36);
+            label10.Size = new Size(77, 25);
             label10.TabIndex = 4;
             label10.Text = "$139.99";
             // 
@@ -545,7 +545,7 @@
             label11.ForeColor = Color.FromArgb(255, 153, 0);
             label11.Location = new Point(72, 199);
             label11.Name = "label11";
-            label11.Size = new Size(130, 25);
+            label11.Size = new Size(94, 17);
             label11.TabIndex = 3;
             label11.Text = "★ 4.8  (45,600)";
             // 
@@ -564,7 +564,7 @@
             label13.ForeColor = Color.FromArgb(0, 113, 133);
             label13.Location = new Point(10, 148);
             label13.Name = "label13";
-            label13.Size = new Size(84, 21);
+            label13.Size = new Size(62, 13);
             label13.TabIndex = 1;
             label13.Text = "Electronics";
             // 
@@ -585,7 +585,7 @@
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
             button2.Location = new Point(7, 179);
-            button2.Margin = new Padding(2, 2, 2, 2);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(189, 22);
             button2.TabIndex = 5;
@@ -639,7 +639,7 @@
             // 
             pictureBox2.BackColor = Color.FromArgb(252, 233, 200);
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(202, 97);
             pictureBox2.TabIndex = 0;
@@ -650,7 +650,7 @@
             panelBackToTop.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelBackToTop.BackColor = Color.FromArgb(55, 71, 90);
             panelBackToTop.Controls.Add(lblBackToTop);
-            panelBackToTop.Location = new Point(3, 323);
+            panelBackToTop.Location = new Point(3, 222);
             panelBackToTop.Name = "panelBackToTop";
             panelBackToTop.Size = new Size(917, 44);
             panelBackToTop.TabIndex = 3;
@@ -662,7 +662,7 @@
             lblBackToTop.ForeColor = Color.White;
             lblBackToTop.Location = new Point(328, 13);
             lblBackToTop.Name = "lblBackToTop";
-            lblBackToTop.Size = new Size(103, 25);
+            lblBackToTop.Size = new Size(74, 17);
             lblBackToTop.TabIndex = 0;
             lblBackToTop.Text = "Back to top";
             lblBackToTop.TextAlign = ContentAlignment.TopCenter;
@@ -689,7 +689,7 @@
             panelFooter.Controls.Add(label18);
             panelFooter.Controls.Add(label15);
             panelFooter.Controls.Add(label14);
-            panelFooter.Location = new Point(3, 373);
+            panelFooter.Location = new Point(3, 272);
             panelFooter.Name = "panelFooter";
             panelFooter.Size = new Size(917, 317);
             panelFooter.TabIndex = 4;
@@ -698,187 +698,187 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label29.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label29.ForeColor = SystemColors.ButtonHighlight;
             label29.Location = new Point(733, 241);
             label29.Name = "label29";
-            label29.Size = new Size(115, 21);
+            label29.Size = new Size(77, 13);
             label29.TabIndex = 26;
             label29.Text = "Shoping Rates";
             // 
             // label28
             // 
             label28.AutoSize = true;
-            label28.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label28.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label28.ForeColor = SystemColors.ButtonHighlight;
             label28.Location = new Point(733, 163);
             label28.Name = "label28";
-            label28.Size = new Size(90, 21);
+            label28.Size = new Size(58, 13);
             label28.TabIndex = 25;
             label28.Text = "Your Order";
             // 
             // label27
             // 
             label27.AutoSize = true;
-            label27.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label27.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.ForeColor = SystemColors.ButtonHighlight;
             label27.Location = new Point(733, 89);
             label27.Name = "label27";
-            label27.Size = new Size(100, 21);
+            label27.Size = new Size(66, 13);
             label27.TabIndex = 24;
             label27.Text = "Your Acount";
             // 
             // label25
             // 
             label25.AutoSize = true;
-            label25.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label25.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label25.ForeColor = SystemColors.ButtonHighlight;
             label25.Location = new Point(524, 241);
             label25.Name = "label25";
-            label25.Size = new Size(74, 21);
+            label25.Size = new Size(48, 13);
             label25.TabIndex = 23;
             label25.Text = "Gift Card";
             // 
             // label24
             // 
             label24.AutoSize = true;
-            label24.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label24.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label24.ForeColor = SystemColors.ButtonHighlight;
             label24.Location = new Point(514, 163);
             label24.Name = "label24";
-            label24.Size = new Size(160, 21);
+            label24.Size = new Size(105, 13);
             label24.TabIndex = 22;
             label24.Text = "ShopHub Store Card";
             // 
             // label30
             // 
             label30.AutoSize = true;
-            label30.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label30.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label30.ForeColor = SystemColors.ButtonHighlight;
             label30.Location = new Point(514, 98);
             label30.Name = "label30";
-            label30.Size = new Size(150, 21);
+            label30.Size = new Size(100, 13);
             label30.TabIndex = 21;
             label30.Text = "ShopHub Visa Card";
             // 
             // label21
             // 
             label21.AutoSize = true;
-            label21.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label21.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.ForeColor = SystemColors.ButtonHighlight;
             label21.Location = new Point(301, 235);
             label21.Name = "label21";
-            label21.Size = new Size(80, 21);
+            label21.Size = new Size(51, 13);
             label21.TabIndex = 20;
             label21.Text = "Advertise";
             // 
             // label20
             // 
             label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label20.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = SystemColors.ButtonHighlight;
             label20.Location = new Point(301, 163);
             label20.Name = "label20";
-            label20.Size = new Size(133, 21);
+            label20.Size = new Size(83, 13);
             label20.TabIndex = 19;
             label20.Text = "Affiliate Program";
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label19.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label19.ForeColor = SystemColors.ButtonHighlight;
             label19.Location = new Point(300, 89);
             label19.Name = "label19";
-            label19.Size = new Size(132, 21);
+            label19.Size = new Size(87, 13);
             label19.TabIndex = 18;
             label19.Text = "Sell on ShopHub";
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label17.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.ForeColor = SystemColors.ButtonHighlight;
             label17.Location = new Point(24, 241);
             label17.Name = "label17";
-            label17.Size = new Size(112, 21);
+            label17.Size = new Size(78, 13);
             label17.TabIndex = 17;
             label17.Text = "Press Release ";
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.ForeColor = SystemColors.ButtonHighlight;
             label16.Location = new Point(24, 163);
             label16.Name = "label16";
-            label16.Size = new Size(65, 21);
+            label16.Size = new Size(43, 13);
             label16.TabIndex = 16;
             label16.Text = "Careers";
             // 
             // label26
             // 
             label26.AutoSize = true;
-            label26.Font = new Font("Segoe UI Variable Display", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label26.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label26.ForeColor = SystemColors.ButtonHighlight;
             label26.Location = new Point(733, 26);
             label26.Name = "label26";
-            label26.Size = new Size(161, 27);
+            label26.Size = new Size(131, 17);
             label26.TabIndex = 12;
             label26.Text = "Let Us Help You ";
             // 
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI Variable Display", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label23.ForeColor = SystemColors.ButtonHighlight;
             label23.Location = new Point(508, 98);
             label23.Name = "label23";
-            label23.Size = new Size(0, 27);
+            label23.Size = new Size(0, 17);
             label23.TabIndex = 9;
             label23.Click += label23_Click;
             // 
             // label22
             // 
             label22.AutoSize = true;
-            label22.Font = new Font("Segoe UI Variable Display", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label22.ForeColor = SystemColors.ButtonHighlight;
             label22.Location = new Point(507, 26);
             label22.Name = "label22";
-            label22.Size = new Size(174, 27);
+            label22.Size = new Size(131, 17);
             label22.TabIndex = 8;
             label22.Text = "Payment Product";
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI Variable Display", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = SystemColors.ButtonHighlight;
             label18.Location = new Point(275, 26);
             label18.Name = "label18";
-            label18.Size = new Size(217, 27);
+            label18.Size = new Size(164, 17);
             label18.TabIndex = 4;
             label18.Text = "Make Money With Us ";
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI Variable Small", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.ForeColor = SystemColors.ButtonHighlight;
             label15.Location = new Point(24, 89);
             label15.Name = "label15";
-            label15.Size = new Size(131, 21);
+            label15.Size = new Size(84, 13);
             label15.TabIndex = 1;
             label15.Text = "About  shopHub";
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Variable Display", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = SystemColors.ButtonHighlight;
             label14.Location = new Point(18, 26);
             label14.Name = "label14";
-            label14.Size = new Size(156, 27);
+            label14.Size = new Size(120, 17);
             label14.TabIndex = 0;
             label14.Text = "Get to Know Us";
             // 
@@ -902,7 +902,7 @@
             label33.ForeColor = SystemColors.ButtonHighlight;
             label33.Location = new Point(342, 22);
             label33.Name = "label33";
-            label33.Size = new Size(64, 25);
+            label33.Size = new Size(47, 17);
             label33.TabIndex = 4;
             label33.Text = "Search";
             // 
@@ -913,7 +913,7 @@
             comboBox1.Items.AddRange(new object[] { "All", "Electronics", "Computers", "Clothing", "Kitchen", "Toys", "Appliances", "Outdoors" });
             comboBox1.Location = new Point(423, 14);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
+            comboBox1.Size = new Size(182, 25);
             comboBox1.TabIndex = 3;
             // 
             // label32
@@ -923,7 +923,7 @@
             label32.ForeColor = SystemColors.ButtonFace;
             label32.Location = new Point(137, 35);
             label32.Name = "label32";
-            label32.Size = new Size(191, 25);
+            label32.Size = new Size(117, 15);
             label32.TabIndex = 2;
             label32.Text = "📍 Lahore, Pakistan";
             // 
@@ -934,7 +934,7 @@
             label31.ForeColor = SystemColors.ButtonFace;
             label31.Location = new Point(170, 0);
             label31.Name = "label31";
-            label31.Size = new Size(105, 25);
+            label31.Size = new Size(70, 15);
             label31.TabIndex = 1;
             label31.Text = "Delever to ";
             // 
@@ -945,7 +945,7 @@
             ShopHub.ForeColor = SystemColors.Control;
             ShopHub.Location = new Point(6, 0);
             ShopHub.Name = "ShopHub";
-            ShopHub.Size = new Size(113, 30);
+            ShopHub.Size = new Size(75, 20);
             ShopHub.TabIndex = 0;
             ShopHub.Text = "ShopHub";
             // 
