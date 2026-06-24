@@ -126,7 +126,7 @@
             panelBanner.Controls.Add(lblSubtitle);
             panelBanner.Controls.Add(label1);
             panelBanner.Controls.Add(lblLimitedTime);
-            panelBanner.Location = new Point(0, 63);
+            panelBanner.Location = new Point(20, 65);
             panelBanner.Name = "panelBanner";
             panelBanner.Size = new Size(943, 180);
             panelBanner.TabIndex = 0;
@@ -894,12 +894,11 @@
             panel4.Controls.Add(label33);
             panel4.Controls.Add(comboBox1);
             panel4.Controls.Add(label32);
-            panel4.Controls.Add(panelBanner);
             panel4.Controls.Add(label31);
             panel4.Controls.Add(ShopHub);
             panel4.Location = new Point(20, 12);
             panel4.Name = "panel4";
-            panel4.Size = new Size(946, 246);
+            panel4.Size = new Size(949, 246);
             panel4.TabIndex = 4;
             // 
             // label33
@@ -962,10 +961,10 @@
             AutoScroll = true;
             AutoSize = true;
             ClientSize = new Size(1164, 1050);
-            Controls.Add(panel4);
             Controls.Add(flowProducts);
             Controls.Add(panelPerks);
             Controls.Add(panelBanner);
+            Controls.Add(panel4);
             Margin = new Padding(4);
             Name = "HomeForm";
             Text = "ShopHub_HOME";

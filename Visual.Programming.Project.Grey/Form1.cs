@@ -55,7 +55,7 @@ namespace Visual.Programming.Project.Grey
 
         private void button6_Click(object sender, EventArgs e)
         {
-            deals dealsForm = new deals();
+            AllProducts dealsForm = new AllProducts();
             dealsForm.Show();
 
         }
