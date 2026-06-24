@@ -149,7 +149,7 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(569, 0);
+            button8.Location = new Point(582, 6);
             button8.Name = "button8";
             button8.Size = new Size(112, 34);
             button8.TabIndex = 8;
@@ -163,7 +163,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(437, 3);
+            button7.Location = new Point(437, 6);
             button7.Name = "button7";
             button7.Size = new Size(112, 34);
             button7.TabIndex = 7;
@@ -177,7 +177,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(291, 3);
+            button6.Location = new Point(301, 6);
             button6.Name = "button6";
             button6.Size = new Size(112, 34);
             button6.TabIndex = 6;
@@ -191,12 +191,13 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(149, 3);
+            button5.Location = new Point(134, 9);
             button5.Name = "button5";
-            button5.Size = new Size(112, 34);
+            button5.Size = new Size(142, 34);
             button5.TabIndex = 5;
-            button5.Text = "Deals";
+            button5.Text = "Your order ";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -204,7 +205,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(4, 3);
+            button4.Location = new Point(-3, 9);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 0;
@@ -341,6 +342,7 @@
             btnAddToCart1.TabIndex = 5;
             btnAddToCart1.Text = "Add to Cart";
             btnAddToCart1.UseVisualStyleBackColor = false;
+            btnAddToCart1.Click += btnAddToCart1_Click;
             // 
             // lblPrice1
             // 
@@ -421,6 +423,7 @@
             button1.TabIndex = 5;
             button1.Text = "Add to Cart";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
@@ -517,6 +520,7 @@
             button3.TabIndex = 5;
             button3.Text = "Add to Cart";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label10
             // 

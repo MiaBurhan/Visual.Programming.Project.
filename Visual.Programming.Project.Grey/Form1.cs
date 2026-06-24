@@ -1,4 +1,6 @@
-using System.Runtime.CompilerServices;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Visual.Programming.Project.Grey
 {
@@ -19,10 +21,6 @@ namespace Visual.Programming.Project.Grey
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            InitializeComponent();
-
-
-
 
         }
 
@@ -59,14 +57,54 @@ namespace Visual.Programming.Project.Grey
 
         private void button6_Click(object sender, EventArgs e)
         {
-            deals dealsForm = new deals();
+            Form3 dealsForm = new Form3();
             dealsForm.Show();
 
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnAddToCart1_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+                Form3 cartForm = new Form3();
+                cartForm.ShowDialog();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+                Form3 cartForm = new Form3();
+                cartForm.ShowDialog();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+                Form3 cartForm = new Form3();
+                cartForm.ShowDialog();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Open the orders form - use Form4 as the orders dialog
+            Form4 yourOrderForm = new Form4();
+            yourOrderForm.ShowDialog();
         }
     }
 }

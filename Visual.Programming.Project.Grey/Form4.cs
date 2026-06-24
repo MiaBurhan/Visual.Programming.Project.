@@ -14,5 +14,10 @@ namespace Visual.Programming.Project.Grey
         {
             InitializeComponent();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
