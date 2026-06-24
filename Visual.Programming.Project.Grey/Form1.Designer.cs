@@ -128,7 +128,7 @@
             panelBanner.Controls.Add(lblLimitedTime);
             panelBanner.Location = new Point(20, 75);
             panelBanner.Name = "panelBanner";
-            panelBanner.Size = new Size(919, 180);
+            panelBanner.Size = new Size(943, 180);
             panelBanner.TabIndex = 0;
             // 
             // panel5
@@ -169,6 +169,7 @@
             button7.TabIndex = 7;
             button7.Text = "Cart ";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -273,7 +274,7 @@
             panelPerks.Controls.Add(lblPerks);
             panelPerks.Location = new Point(23, 261);
             panelPerks.Name = "panelPerks";
-            panelPerks.Size = new Size(926, 46);
+            panelPerks.Size = new Size(940, 46);
             panelPerks.TabIndex = 1;
             panelPerks.Paint += panel1_Paint;
             // 
@@ -875,7 +876,7 @@
             panel4.Controls.Add(ShopHub);
             panel4.Location = new Point(20, 12);
             panel4.Name = "panel4";
-            panel4.Size = new Size(951, 68);
+            panel4.Size = new Size(943, 68);
             panel4.TabIndex = 4;
             // 
             // label33
@@ -937,7 +938,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
-            ClientSize = new Size(962, 1050);
+            ClientSize = new Size(1164, 1050);
             Controls.Add(panel4);
             Controls.Add(flowProducts);
             Controls.Add(panelPerks);

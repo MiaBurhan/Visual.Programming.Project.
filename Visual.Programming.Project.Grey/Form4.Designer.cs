@@ -1,6 +1,6 @@
 ﻿namespace Visual.Programming.Project.Grey
 {
-    partial class deals
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             SuspendLayout();
             // 
-            // deals
+            // Form4
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1266, 675);
-            Name = "deals";
-            Text = "Cart";
-            Load += deals_Load;
+            ClientSize = new Size(800, 450);
+            Name = "Form4";
+            Text = "cart product ";
             ResumeLayout(false);
         }
 
