@@ -8,14 +8,41 @@ using System.Windows.Forms;
 
 namespace Visual.Programming.Project.Grey
 {
-    public partial class Form4 : Form
+    public partial class AllProducts : Form
     {
-        public Form4()
+        public AllProducts()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void lblProduct1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AllProducts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
         {
 
         }
