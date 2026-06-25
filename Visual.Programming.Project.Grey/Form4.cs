@@ -13,6 +13,8 @@ namespace Visual.Programming.Project.Grey
         public Form4()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void Form4_Load(object sender, EventArgs e)

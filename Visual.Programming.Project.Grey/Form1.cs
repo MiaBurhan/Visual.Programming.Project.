@@ -1,6 +1,4 @@
-using System;
-using System.Drawing;
-using System.Windows.Forms;
+using System.Runtime.CompilerServices;
 
 namespace Visual.Programming.Project.Grey
 {
@@ -57,7 +55,7 @@ namespace Visual.Programming.Project.Grey
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form3 dealsForm = new Form3();
+            AllProducts dealsForm = new AllProducts();
             dealsForm.Show();
 
         }
