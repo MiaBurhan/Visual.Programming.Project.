@@ -62,7 +62,7 @@ namespace Visual.Programming.Project.Grey
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ProductsForm productsForm = new ProductsForm(); 
+            Products productsForm = new Products();
             productsForm.Show();
         }
 
@@ -104,6 +104,16 @@ namespace Visual.Programming.Project.Grey
             // Open the orders form - use Form4 as the orders dialog
             Form4 yourOrderForm = new Form4();
             yourOrderForm.ShowDialog();
+        }
+
+        private void lblCategory1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

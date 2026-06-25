@@ -44,10 +44,12 @@
             lblLimitedTime = new Label();
             label5 = new Label();
             panelBanner = new Panel();
-            pictureBox1 = new PictureBox();
             lblSubtitle = new Label();
             label7 = new Label();
             label8 = new Label();
+            pictureBox1 = new PictureBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panelBanner.SuspendLayout();
@@ -57,6 +59,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(35, 47, 59);
+            panel1.Controls.Add(textBox6);
+            panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(btnShopNow);
@@ -73,7 +77,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(543, 287);
+            textBox4.Location = new Point(543, 164);
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "ENTER YOUR PHONE NUMBER";
             textBox4.Size = new Size(375, 31);
@@ -81,7 +85,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(543, 188);
+            textBox3.Location = new Point(543, 115);
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "ENTER  YOUR EMAIL ";
             textBox3.Size = new Size(375, 31);
@@ -93,7 +97,7 @@
             btnShopNow.FlatStyle = FlatStyle.Flat;
             btnShopNow.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnShopNow.ForeColor = Color.White;
-            btnShopNow.Location = new Point(654, 409);
+            btnShopNow.Location = new Point(628, 442);
             btnShopNow.Name = "btnShopNow";
             btnShopNow.Size = new Size(112, 37);
             btnShopNow.TabIndex = 3;
@@ -103,7 +107,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(543, 103);
+            textBox2.Location = new Point(543, 61);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "ENTER YOUR EMAIL ";
             textBox2.Size = new Size(375, 31);
@@ -123,7 +127,7 @@
             label4.BackColor = Color.FromArgb(255, 153, 0);
             label4.BorderStyle = BorderStyle.Fixed3D;
             label4.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(215, 290);
+            label4.Location = new Point(341, 167);
             label4.Name = "label4";
             label4.Size = new Size(149, 28);
             label4.TabIndex = 11;
@@ -134,7 +138,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(255, 153, 0);
             label3.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            label3.Location = new Point(215, 200);
+            label3.Location = new Point(341, 120);
             label3.Name = "label3";
             label3.Size = new Size(88, 26);
             label3.TabIndex = 10;
@@ -146,7 +150,7 @@
             label2.BackColor = Color.FromArgb(255, 153, 0);
             label2.BorderStyle = BorderStyle.Fixed3D;
             label2.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            label2.Location = new Point(215, 103);
+            label2.Location = new Point(341, 61);
             label2.Name = "label2";
             label2.Size = new Size(81, 28);
             label2.TabIndex = 9;
@@ -158,7 +162,7 @@
             label1.BackColor = Color.FromArgb(255, 153, 0);
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            label1.Location = new Point(215, 17);
+            label1.Location = new Point(341, 10);
             label1.Name = "label1";
             label1.Size = new Size(79, 28);
             label1.TabIndex = 8;
@@ -223,15 +227,6 @@
             panelBanner.Size = new Size(1171, 192);
             panelBanner.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(926, 20);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(242, 165);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
             // lblSubtitle
             // 
             lblSubtitle.AutoSize = true;
@@ -264,6 +259,29 @@
             label8.Size = new Size(133, 25);
             label8.TabIndex = 3;
             label8.Text = "LIMITED TIME";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(926, 20);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(242, 165);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(543, 219);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(375, 31);
+            textBox5.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(543, 270);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(375, 31);
+            textBox6.TabIndex = 17;
             // 
             // Form3
             // 
@@ -308,5 +326,7 @@
         private Label lblSubtitle;
         private Label label7;
         private Label label8;
+        private TextBox textBox6;
+        private TextBox textBox5;
     }
 }

@@ -41,6 +41,7 @@
             lblSubtitle = new Label();
             label1 = new Label();
             lblLimitedTime = new Label();
+            flowPanelOrders = new FlowLayoutPanel();
             panelBanner.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -95,7 +96,7 @@
             button7.Name = "button7";
             button7.Size = new Size(112, 34);
             button7.TabIndex = 7;
-            button7.Text = "Cart ";
+            button7.Text = "Product ";
             button7.UseVisualStyleBackColor = false;
             // 
             // button6
@@ -108,7 +109,7 @@
             button6.Name = "button6";
             button6.Size = new Size(112, 34);
             button6.TabIndex = 6;
-            button6.Text = "Products";
+            button6.Text = "Cart ";
             button6.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -194,11 +195,10 @@
             // 
             // flowPanelOrders
             // 
-            flowPanelOrders = new FlowLayoutPanel();
+            flowPanelOrders.AutoScroll = true;
             flowPanelOrders.Location = new Point(10, 210);
             flowPanelOrders.Name = "flowPanelOrders";
             flowPanelOrders.Size = new Size(1240, 830);
-            flowPanelOrders.AutoScroll = true;
             flowPanelOrders.TabIndex = 2;
             // 
             // Form4
