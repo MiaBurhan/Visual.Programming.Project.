@@ -14,6 +14,7 @@ namespace Visual.Programming.Project.Grey
         public Form3()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         public Form3(string productName) : this()
