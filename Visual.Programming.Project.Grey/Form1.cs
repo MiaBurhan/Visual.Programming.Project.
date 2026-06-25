@@ -62,8 +62,8 @@ namespace Visual.Programming.Project.Grey
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Products productsForm = new Products();
-            productsForm.Show();
+            AllProducts frm = new AllProducts();
+            frm.ShowDialog();
         }
 
         private void btnAddToCart1_Click(object sender, EventArgs e)
@@ -114,6 +114,37 @@ namespace Visual.Programming.Project.Grey
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnShopNow_Click(object sender, EventArgs e)
+        {
+            AllProducts frm = new AllProducts();
+            frm.ShowDialog();
+        }
+
+        private void lblPerks_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+        }
+
+        private void picProduct1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
         }
     }
 }

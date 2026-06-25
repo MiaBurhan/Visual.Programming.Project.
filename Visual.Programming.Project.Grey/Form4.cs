@@ -81,5 +81,18 @@ namespace Visual.Programming.Project.Grey
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form4 yourOrderForm = new Form4();
+            yourOrderForm.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AllProducts dealsForm = new AllProducts();
+            dealsForm.Show();
+
+        }
     }
 }

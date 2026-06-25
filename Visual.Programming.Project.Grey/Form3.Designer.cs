@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             panel1 = new Panel();
+            textBox6 = new TextBox();
+            textBox5 = new TextBox();
             textBox4 = new TextBox();
             textBox3 = new TextBox();
             btnShopNow = new Button();
@@ -48,8 +50,8 @@
             label7 = new Label();
             label8 = new Label();
             pictureBox1 = new PictureBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            label9 = new Label();
+            label10 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panelBanner.SuspendLayout();
@@ -59,6 +61,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(35, 47, 59);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(label9);
             panel1.Controls.Add(textBox6);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox4);
@@ -74,6 +78,23 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1171, 497);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(543, 270);
+            textBox6.Name = "textBox6";
+            textBox6.PlaceholderText = "ENTER YOUR PASWARD ";
+            textBox6.Size = new Size(375, 31);
+            textBox6.TabIndex = 17;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(543, 219);
+            textBox5.Name = "textBox5";
+            textBox5.PlaceholderText = "ENTER YOUR DEBIT CARD NUMBER ";
+            textBox5.Size = new Size(375, 31);
+            textBox5.TabIndex = 16;
             // 
             // textBox4
             // 
@@ -269,19 +290,29 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // textBox5
+            // label9
             // 
-            textBox5.Location = new Point(543, 219);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(375, 31);
-            textBox5.TabIndex = 16;
+            label9.AutoSize = true;
+            label9.BackColor = Color.FromArgb(255, 153, 0);
+            label9.BorderStyle = BorderStyle.Fixed3D;
+            label9.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(341, 232);
+            label9.Name = "label9";
+            label9.Size = new Size(177, 28);
+            label9.TabIndex = 18;
+            label9.Text = "Debit Card NO ";
             // 
-            // textBox6
+            // label10
             // 
-            textBox6.Location = new Point(543, 270);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(375, 31);
-            textBox6.TabIndex = 17;
+            label10.AutoSize = true;
+            label10.BackColor = Color.FromArgb(255, 153, 0);
+            label10.BorderStyle = BorderStyle.Fixed3D;
+            label10.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(341, 289);
+            label10.Name = "label10";
+            label10.Size = new Size(109, 28);
+            label10.TabIndex = 19;
+            label10.Text = "Pasward ";
             // 
             // Form3
             // 
@@ -328,5 +359,7 @@
         private Label label8;
         private TextBox textBox6;
         private TextBox textBox5;
+        private Label label10;
+        private Label label9;
     }
 }

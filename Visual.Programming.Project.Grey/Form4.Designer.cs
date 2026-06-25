@@ -94,10 +94,11 @@
             button7.ForeColor = Color.White;
             button7.Location = new Point(682, 6);
             button7.Name = "button7";
-            button7.Size = new Size(112, 34);
+            button7.Size = new Size(135, 34);
             button7.TabIndex = 7;
-            button7.Text = "Product ";
+            button7.Text = "All Product ";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -124,6 +125,7 @@
             button5.TabIndex = 5;
             button5.Text = "Your order ";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
