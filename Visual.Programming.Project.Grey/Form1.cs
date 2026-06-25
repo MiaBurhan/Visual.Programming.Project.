@@ -64,7 +64,8 @@ namespace Visual.Programming.Project.Grey
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            ProductsForm productsForm = new ProductsForm(); 
+            productsForm.Show();
         }
 
         private void btnAddToCart1_Click(object sender, EventArgs e)

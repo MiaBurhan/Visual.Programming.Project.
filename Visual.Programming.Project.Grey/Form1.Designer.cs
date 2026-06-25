@@ -167,7 +167,7 @@
             button7.Name = "button7";
             button7.Size = new Size(112, 34);
             button7.TabIndex = 7;
-            button7.Text = "Cart ";
+            button7.Text = "Products";
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
@@ -181,7 +181,7 @@
             button6.Name = "button6";
             button6.Size = new Size(112, 34);
             button6.TabIndex = 6;
-            button6.Text = "Products";
+            button6.Text = "Cart ";
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
