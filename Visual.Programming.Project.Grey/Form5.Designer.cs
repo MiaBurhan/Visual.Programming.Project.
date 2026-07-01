@@ -135,20 +135,19 @@
             panelHeader.Controls.Add(lblTitle);
             panelHeader.Dock = DockStyle.Top;
             panelHeader.Location = new Point(0, 0);
-            panelHeader.Margin = new Padding(4);
             panelHeader.Name = "panelHeader";
-            panelHeader.Size = new Size(1643, 115);
+            panelHeader.Size = new Size(1151, 54);
             panelHeader.TabIndex = 2;
+            panelHeader.Paint += panelHeader_Paint;
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(29, 22);
-            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Location = new Point(20, 15);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(161, 45);
+            lblTitle.Size = new Size(109, 30);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "ShopHub";
             // 
@@ -160,19 +159,17 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(430, 196);
-            panel2.Margin = new Padding(4);
+            panel2.Location = new Point(301, 133);
             panel2.Name = "panel2";
-            panel2.Size = new Size(358, 487);
+            panel2.Size = new Size(251, 332);
             panel2.TabIndex = 5;
             // 
             // button1
             // 
             button1.BackColor = Color.Gold;
-            button1.Location = new Point(24, 406);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(17, 276);
             button1.Name = "button1";
-            button1.Size = new Size(314, 51);
+            button1.Size = new Size(220, 35);
             button1.TabIndex = 3;
             button1.Text = "Add To Cart";
             button1.UseVisualStyleBackColor = false;
@@ -182,20 +179,18 @@
             // 
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = Color.DarkRed;
-            label1.Location = new Point(24, 343);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(17, 233);
             label1.Name = "label1";
-            label1.Size = new Size(143, 34);
+            label1.Size = new Size(100, 23);
             label1.TabIndex = 2;
             label1.Text = "Rs. 2,500";
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label2.Location = new Point(24, 284);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(17, 193);
             label2.Name = "label2";
-            label2.Size = new Size(314, 59);
+            label2.Size = new Size(220, 40);
             label2.TabIndex = 1;
             label2.Text = "Action Figure";
             label2.Click += label2_Click;
@@ -204,11 +199,9 @@
             // 
             pictureBox2.BackColor = Color.LightGray;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Location = new Point(24, 19);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Location = new Point(-1, -1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(313, 259);
+            pictureBox2.Size = new Size(251, 191);
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
@@ -216,10 +209,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(36, 119);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(25, 81);
             label5.Name = "label5";
-            label5.Size = new Size(93, 48);
+            label5.Size = new Size(61, 32);
             label5.TabIndex = 7;
             label5.Text = "Toys";
             label5.Click += label5_Click;
@@ -232,19 +224,17 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(839, 196);
-            panel3.Margin = new Padding(4);
+            panel3.Location = new Point(587, 133);
             panel3.Name = "panel3";
-            panel3.Size = new Size(358, 487);
+            panel3.Size = new Size(251, 332);
             panel3.TabIndex = 12;
             // 
             // button2
             // 
             button2.BackColor = Color.Gold;
-            button2.Location = new Point(24, 406);
-            button2.Margin = new Padding(4);
+            button2.Location = new Point(17, 276);
             button2.Name = "button2";
-            button2.Size = new Size(314, 51);
+            button2.Size = new Size(220, 35);
             button2.TabIndex = 3;
             button2.Text = "Add To Cart";
             button2.UseVisualStyleBackColor = false;
@@ -254,20 +244,18 @@
             // 
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(24, 343);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(17, 233);
             label3.Name = "label3";
-            label3.Size = new Size(143, 34);
+            label3.Size = new Size(100, 23);
             label3.TabIndex = 2;
             label3.Text = "Rs. 2,500";
             // 
             // label4
             // 
             label4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label4.Location = new Point(24, 284);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(17, 193);
             label4.Name = "label4";
-            label4.Size = new Size(314, 59);
+            label4.Size = new Size(220, 40);
             label4.TabIndex = 1;
             label4.Text = "Bunch O Balloons";
             // 
@@ -275,11 +263,9 @@
             // 
             pictureBox3.BackColor = Color.LightGray;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(24, 19);
-            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Location = new Point(-1, -1);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(313, 259);
+            pictureBox3.Size = new Size(251, 191);
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
@@ -291,19 +277,17 @@
             panel1.Controls.Add(label13);
             panel1.Controls.Add(label14);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(1237, 196);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(866, 133);
             panel1.Name = "panel1";
-            panel1.Size = new Size(358, 487);
+            panel1.Size = new Size(251, 332);
             panel1.TabIndex = 6;
             // 
             // button6
             // 
             button6.BackColor = Color.Gold;
-            button6.Location = new Point(24, 406);
-            button6.Margin = new Padding(4);
+            button6.Location = new Point(17, 276);
             button6.Name = "button6";
-            button6.Size = new Size(314, 51);
+            button6.Size = new Size(220, 35);
             button6.TabIndex = 3;
             button6.Text = "Add To Cart";
             button6.UseVisualStyleBackColor = false;
@@ -313,20 +297,18 @@
             // 
             label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label13.ForeColor = Color.DarkRed;
-            label13.Location = new Point(24, 343);
-            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Location = new Point(17, 233);
             label13.Name = "label13";
-            label13.Size = new Size(143, 34);
+            label13.Size = new Size(100, 23);
             label13.TabIndex = 2;
             label13.Text = "Rs. 2,500";
             // 
             // label14
             // 
             label14.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label14.Location = new Point(24, 284);
-            label14.Margin = new Padding(4, 0, 4, 0);
+            label14.Location = new Point(17, 193);
             label14.Name = "label14";
-            label14.Size = new Size(314, 59);
+            label14.Size = new Size(220, 40);
             label14.TabIndex = 1;
             label14.Text = "Handheld Game";
             // 
@@ -335,11 +317,9 @@
             pictureBox1.BackColor = Color.LightGray;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(24, 19);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(-1, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(313, 259);
+            pictureBox1.Size = new Size(251, 191);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -351,19 +331,17 @@
             panel7.Controls.Add(label15);
             panel7.Controls.Add(label16);
             panel7.Controls.Add(pictureBox7);
-            panel7.Location = new Point(36, 196);
-            panel7.Margin = new Padding(4);
+            panel7.Location = new Point(25, 133);
             panel7.Name = "panel7";
-            panel7.Size = new Size(358, 487);
+            panel7.Size = new Size(251, 332);
             panel7.TabIndex = 6;
             // 
             // button7
             // 
             button7.BackColor = Color.Gold;
-            button7.Location = new Point(24, 406);
-            button7.Margin = new Padding(4);
+            button7.Location = new Point(17, 276);
             button7.Name = "button7";
-            button7.Size = new Size(314, 51);
+            button7.Size = new Size(220, 35);
             button7.TabIndex = 3;
             button7.Text = "Add To Cart";
             button7.UseVisualStyleBackColor = false;
@@ -373,20 +351,18 @@
             // 
             label15.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label15.ForeColor = Color.DarkRed;
-            label15.Location = new Point(24, 343);
-            label15.Margin = new Padding(4, 0, 4, 0);
+            label15.Location = new Point(17, 233);
             label15.Name = "label15";
-            label15.Size = new Size(143, 34);
+            label15.Size = new Size(100, 23);
             label15.TabIndex = 2;
             label15.Text = "Rs. 2,500";
             // 
             // label16
             // 
             label16.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label16.Location = new Point(17, 284);
-            label16.Margin = new Padding(4, 0, 4, 0);
+            label16.Location = new Point(12, 193);
             label16.Name = "label16";
-            label16.Size = new Size(314, 59);
+            label16.Size = new Size(220, 40);
             label16.TabIndex = 1;
             label16.Text = "Remote Control Car";
             // 
@@ -394,11 +370,9 @@
             // 
             pictureBox7.BackColor = Color.LightGray;
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
-            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox7.Location = new Point(17, 19);
-            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Location = new Point(-1, -1);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(313, 259);
+            pictureBox7.Size = new Size(251, 191);
             pictureBox7.TabIndex = 0;
             pictureBox7.TabStop = false;
             pictureBox7.Click += pictureBox7_Click;
@@ -407,10 +381,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(29, 747);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(20, 508);
             label6.Name = "label6";
-            label6.Size = new Size(145, 48);
+            label6.Size = new Size(96, 32);
             label6.TabIndex = 13;
             label6.Text = "Fashion";
             // 
@@ -422,19 +395,17 @@
             panel4.Controls.Add(label7);
             panel4.Controls.Add(label8);
             panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(29, 825);
-            panel4.Margin = new Padding(4);
+            panel4.Location = new Point(20, 561);
             panel4.Name = "panel4";
-            panel4.Size = new Size(358, 487);
+            panel4.Size = new Size(251, 332);
             panel4.TabIndex = 7;
             // 
             // button3
             // 
             button3.BackColor = Color.Gold;
-            button3.Location = new Point(24, 406);
-            button3.Margin = new Padding(4);
+            button3.Location = new Point(17, 276);
             button3.Name = "button3";
-            button3.Size = new Size(314, 51);
+            button3.Size = new Size(220, 35);
             button3.TabIndex = 3;
             button3.Text = "Add To Cart";
             button3.UseVisualStyleBackColor = false;
@@ -444,20 +415,18 @@
             // 
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label7.ForeColor = Color.DarkRed;
-            label7.Location = new Point(24, 343);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(17, 233);
             label7.Name = "label7";
-            label7.Size = new Size(143, 34);
+            label7.Size = new Size(100, 23);
             label7.TabIndex = 2;
             label7.Text = "Rs. 7,700";
             // 
             // label8
             // 
             label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label8.Location = new Point(24, 284);
-            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Location = new Point(17, 193);
             label8.Name = "label8";
-            label8.Size = new Size(314, 59);
+            label8.Size = new Size(220, 40);
             label8.TabIndex = 1;
             label8.Text = "Arssm Men";
             // 
@@ -466,11 +435,9 @@
             pictureBox4.BackColor = Color.LightGray;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox4.Location = new Point(24, 19);
-            pictureBox4.Margin = new Padding(4);
+            pictureBox4.Location = new Point(-1, -1);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(313, 259);
+            pictureBox4.Size = new Size(251, 191);
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
@@ -482,19 +449,17 @@
             panel5.Controls.Add(label9);
             panel5.Controls.Add(label10);
             panel5.Controls.Add(pictureBox5);
-            panel5.Location = new Point(430, 825);
-            panel5.Margin = new Padding(4);
+            panel5.Location = new Point(301, 561);
             panel5.Name = "panel5";
-            panel5.Size = new Size(358, 487);
+            panel5.Size = new Size(251, 332);
             panel5.TabIndex = 8;
             // 
             // button4
             // 
             button4.BackColor = Color.Gold;
-            button4.Location = new Point(24, 406);
-            button4.Margin = new Padding(4);
+            button4.Location = new Point(17, 276);
             button4.Name = "button4";
-            button4.Size = new Size(314, 51);
+            button4.Size = new Size(220, 35);
             button4.TabIndex = 3;
             button4.Text = "Add To Cart";
             button4.UseVisualStyleBackColor = false;
@@ -504,20 +469,18 @@
             // 
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label9.ForeColor = Color.DarkRed;
-            label9.Location = new Point(24, 343);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(17, 233);
             label9.Name = "label9";
-            label9.Size = new Size(143, 34);
+            label9.Size = new Size(100, 23);
             label9.TabIndex = 2;
             label9.Text = "Rs. 2,500";
             // 
             // label10
             // 
             label10.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label10.Location = new Point(24, 284);
-            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Location = new Point(17, 193);
             label10.Name = "label10";
-            label10.Size = new Size(314, 59);
+            label10.Size = new Size(220, 40);
             label10.TabIndex = 1;
             label10.Text = "UOUA Mens Graphic Tees ";
             // 
@@ -526,11 +489,9 @@
             pictureBox5.BackColor = Color.LightGray;
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox5.Location = new Point(24, 19);
-            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Location = new Point(-1, -1);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(313, 259);
+            pictureBox5.Size = new Size(251, 191);
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
@@ -542,19 +503,17 @@
             panel6.Controls.Add(label11);
             panel6.Controls.Add(label12);
             panel6.Controls.Add(pictureBox6);
-            panel6.Location = new Point(839, 825);
-            panel6.Margin = new Padding(4);
+            panel6.Location = new Point(587, 561);
             panel6.Name = "panel6";
-            panel6.Size = new Size(358, 487);
+            panel6.Size = new Size(251, 332);
             panel6.TabIndex = 8;
             // 
             // button5
             // 
             button5.BackColor = Color.Gold;
-            button5.Location = new Point(24, 406);
-            button5.Margin = new Padding(4);
+            button5.Location = new Point(17, 276);
             button5.Name = "button5";
-            button5.Size = new Size(314, 51);
+            button5.Size = new Size(220, 35);
             button5.TabIndex = 3;
             button5.Text = "Add To Cart";
             button5.UseVisualStyleBackColor = false;
@@ -564,20 +523,18 @@
             // 
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label11.ForeColor = Color.DarkRed;
-            label11.Location = new Point(24, 343);
-            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Location = new Point(17, 233);
             label11.Name = "label11";
-            label11.Size = new Size(143, 34);
+            label11.Size = new Size(100, 23);
             label11.TabIndex = 2;
             label11.Text = "Rs. 2,500";
             // 
             // label12
             // 
             label12.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label12.Location = new Point(24, 284);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Location = new Point(17, 193);
             label12.Name = "label12";
-            label12.Size = new Size(314, 59);
+            label12.Size = new Size(220, 40);
             label12.TabIndex = 1;
             label12.Text = "OverSized Heavy cotton";
             // 
@@ -586,11 +543,9 @@
             pictureBox6.BackColor = Color.LightGray;
             pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
             pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox6.Location = new Point(24, 19);
-            pictureBox6.Margin = new Padding(4);
+            pictureBox6.Location = new Point(-1, -1);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(313, 259);
+            pictureBox6.Size = new Size(251, 191);
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
@@ -602,19 +557,17 @@
             panel8.Controls.Add(label17);
             panel8.Controls.Add(label18);
             panel8.Controls.Add(pictureBox8);
-            panel8.Location = new Point(1237, 825);
-            panel8.Margin = new Padding(4);
+            panel8.Location = new Point(866, 561);
             panel8.Name = "panel8";
-            panel8.Size = new Size(358, 487);
+            panel8.Size = new Size(251, 332);
             panel8.TabIndex = 8;
             // 
             // button8
             // 
             button8.BackColor = Color.Gold;
-            button8.Location = new Point(24, 406);
-            button8.Margin = new Padding(4);
+            button8.Location = new Point(17, 276);
             button8.Name = "button8";
-            button8.Size = new Size(314, 51);
+            button8.Size = new Size(220, 35);
             button8.TabIndex = 3;
             button8.Text = "Add To Cart";
             button8.UseVisualStyleBackColor = false;
@@ -624,20 +577,18 @@
             // 
             label17.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label17.ForeColor = Color.DarkRed;
-            label17.Location = new Point(24, 343);
-            label17.Margin = new Padding(4, 0, 4, 0);
+            label17.Location = new Point(17, 233);
             label17.Name = "label17";
-            label17.Size = new Size(143, 34);
+            label17.Size = new Size(100, 23);
             label17.TabIndex = 2;
             label17.Text = "Rs. 2,500";
             // 
             // label18
             // 
             label18.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label18.Location = new Point(24, 284);
-            label18.Margin = new Padding(4, 0, 4, 0);
+            label18.Location = new Point(17, 193);
             label18.Name = "label18";
-            label18.Size = new Size(314, 59);
+            label18.Size = new Size(220, 40);
             label18.TabIndex = 1;
             label18.Text = "Bomber Jacket";
             // 
@@ -646,11 +597,9 @@
             pictureBox8.BackColor = Color.LightGray;
             pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
             pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox8.Location = new Point(24, 19);
-            pictureBox8.Margin = new Padding(4);
+            pictureBox8.Location = new Point(-1, -1);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(313, 259);
+            pictureBox8.Size = new Size(251, 191);
             pictureBox8.TabIndex = 0;
             pictureBox8.TabStop = false;
             // 
@@ -658,10 +607,9 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.Location = new Point(17, 1366);
-            label19.Margin = new Padding(4, 0, 4, 0);
+            label19.Location = new Point(12, 929);
             label19.Name = "label19";
-            label19.Size = new Size(195, 48);
+            label19.Size = new Size(129, 32);
             label19.TabIndex = 14;
             label19.Text = "Electronics";
             // 
@@ -673,19 +621,17 @@
             panel9.Controls.Add(label20);
             panel9.Controls.Add(label21);
             panel9.Controls.Add(pictureBox9);
-            panel9.Location = new Point(29, 1440);
-            panel9.Margin = new Padding(4);
+            panel9.Location = new Point(20, 979);
             panel9.Name = "panel9";
-            panel9.Size = new Size(358, 487);
+            panel9.Size = new Size(251, 332);
             panel9.TabIndex = 8;
             // 
             // button9
             // 
             button9.BackColor = Color.Gold;
-            button9.Location = new Point(24, 406);
-            button9.Margin = new Padding(4);
+            button9.Location = new Point(17, 276);
             button9.Name = "button9";
-            button9.Size = new Size(314, 51);
+            button9.Size = new Size(220, 35);
             button9.TabIndex = 3;
             button9.Text = "Add To Cart";
             button9.UseVisualStyleBackColor = false;
@@ -695,20 +641,18 @@
             // 
             label20.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label20.ForeColor = Color.DarkRed;
-            label20.Location = new Point(24, 343);
-            label20.Margin = new Padding(4, 0, 4, 0);
+            label20.Location = new Point(17, 233);
             label20.Name = "label20";
-            label20.Size = new Size(143, 34);
+            label20.Size = new Size(100, 23);
             label20.TabIndex = 2;
             label20.Text = "Rs. 8,700";
             // 
             // label21
             // 
             label21.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label21.Location = new Point(24, 284);
-            label21.Margin = new Padding(4, 0, 4, 0);
+            label21.Location = new Point(17, 193);
             label21.Name = "label21";
-            label21.Size = new Size(314, 59);
+            label21.Size = new Size(220, 40);
             label21.TabIndex = 1;
             label21.Text = "Meta Ray-Ban";
             // 
@@ -717,11 +661,9 @@
             pictureBox9.BackColor = Color.LightGray;
             pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
             pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox9.Location = new Point(24, 19);
-            pictureBox9.Margin = new Padding(4);
+            pictureBox9.Location = new Point(-1, -1);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(313, 259);
+            pictureBox9.Size = new Size(251, 191);
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
@@ -733,19 +675,17 @@
             panel10.Controls.Add(label22);
             panel10.Controls.Add(label23);
             panel10.Controls.Add(pictureBox10);
-            panel10.Location = new Point(430, 1440);
-            panel10.Margin = new Padding(4);
+            panel10.Location = new Point(301, 979);
             panel10.Name = "panel10";
-            panel10.Size = new Size(358, 487);
+            panel10.Size = new Size(251, 332);
             panel10.TabIndex = 9;
             // 
             // button10
             // 
             button10.BackColor = Color.Gold;
-            button10.Location = new Point(24, 406);
-            button10.Margin = new Padding(4);
+            button10.Location = new Point(17, 276);
             button10.Name = "button10";
-            button10.Size = new Size(314, 51);
+            button10.Size = new Size(220, 35);
             button10.TabIndex = 3;
             button10.Text = "Add To Cart";
             button10.UseVisualStyleBackColor = false;
@@ -755,20 +695,18 @@
             // 
             label22.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label22.ForeColor = Color.DarkRed;
-            label22.Location = new Point(24, 343);
-            label22.Margin = new Padding(4, 0, 4, 0);
+            label22.Location = new Point(17, 233);
             label22.Name = "label22";
-            label22.Size = new Size(143, 34);
+            label22.Size = new Size(100, 23);
             label22.TabIndex = 2;
             label22.Text = "Rs. 113,794";
             // 
             // label23
             // 
             label23.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label23.Location = new Point(24, 284);
-            label23.Margin = new Padding(4, 0, 4, 0);
+            label23.Location = new Point(17, 193);
             label23.Name = "label23";
-            label23.Size = new Size(314, 59);
+            label23.Size = new Size(220, 40);
             label23.TabIndex = 1;
             label23.Text = "Meta Ray-Ban";
             // 
@@ -777,11 +715,9 @@
             pictureBox10.BackColor = Color.LightGray;
             pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
             pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox10.Location = new Point(24, 19);
-            pictureBox10.Margin = new Padding(4);
+            pictureBox10.Location = new Point(-1, -1);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(313, 259);
+            pictureBox10.Size = new Size(251, 191);
             pictureBox10.TabIndex = 0;
             pictureBox10.TabStop = false;
             // 
@@ -793,19 +729,17 @@
             panel11.Controls.Add(label24);
             panel11.Controls.Add(label25);
             panel11.Controls.Add(pictureBox11);
-            panel11.Location = new Point(839, 1440);
-            panel11.Margin = new Padding(4);
+            panel11.Location = new Point(587, 979);
             panel11.Name = "panel11";
-            panel11.Size = new Size(358, 487);
+            panel11.Size = new Size(251, 332);
             panel11.TabIndex = 9;
             // 
             // button11
             // 
             button11.BackColor = Color.Gold;
-            button11.Location = new Point(24, 406);
-            button11.Margin = new Padding(4);
+            button11.Location = new Point(17, 276);
             button11.Name = "button11";
-            button11.Size = new Size(314, 51);
+            button11.Size = new Size(220, 35);
             button11.TabIndex = 3;
             button11.Text = "Add To Cart";
             button11.UseVisualStyleBackColor = false;
@@ -815,20 +749,18 @@
             // 
             label24.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label24.ForeColor = Color.DarkRed;
-            label24.Location = new Point(24, 343);
-            label24.Margin = new Padding(4, 0, 4, 0);
+            label24.Location = new Point(17, 233);
             label24.Name = "label24";
-            label24.Size = new Size(143, 34);
+            label24.Size = new Size(100, 23);
             label24.TabIndex = 2;
             label24.Text = "Rs. 408,987";
             // 
             // label25
             // 
             label25.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label25.Location = new Point(24, 284);
-            label25.Margin = new Padding(4, 0, 4, 0);
+            label25.Location = new Point(17, 193);
             label25.Name = "label25";
-            label25.Size = new Size(314, 59);
+            label25.Size = new Size(220, 40);
             label25.TabIndex = 1;
             label25.Text = "Samsung Galaxy Z Fold7";
             // 
@@ -837,11 +769,9 @@
             pictureBox11.BackColor = Color.LightGray;
             pictureBox11.BackgroundImage = (Image)resources.GetObject("pictureBox11.BackgroundImage");
             pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox11.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox11.Location = new Point(24, 19);
-            pictureBox11.Margin = new Padding(4);
+            pictureBox11.Location = new Point(-1, -1);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(313, 259);
+            pictureBox11.Size = new Size(251, 191);
             pictureBox11.TabIndex = 0;
             pictureBox11.TabStop = false;
             // 
@@ -853,19 +783,17 @@
             panel12.Controls.Add(label26);
             panel12.Controls.Add(label27);
             panel12.Controls.Add(pictureBox12);
-            panel12.Location = new Point(1237, 1440);
-            panel12.Margin = new Padding(4);
+            panel12.Location = new Point(866, 979);
             panel12.Name = "panel12";
-            panel12.Size = new Size(358, 487);
+            panel12.Size = new Size(251, 332);
             panel12.TabIndex = 9;
             // 
             // button12
             // 
             button12.BackColor = Color.Gold;
-            button12.Location = new Point(24, 406);
-            button12.Margin = new Padding(4);
+            button12.Location = new Point(17, 276);
             button12.Name = "button12";
-            button12.Size = new Size(314, 51);
+            button12.Size = new Size(220, 35);
             button12.TabIndex = 3;
             button12.Text = "Add To Cart";
             button12.UseVisualStyleBackColor = false;
@@ -875,20 +803,18 @@
             // 
             label26.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label26.ForeColor = Color.DarkRed;
-            label26.Location = new Point(24, 343);
-            label26.Margin = new Padding(4, 0, 4, 0);
+            label26.Location = new Point(17, 233);
             label26.Name = "label26";
-            label26.Size = new Size(143, 34);
+            label26.Size = new Size(100, 23);
             label26.TabIndex = 2;
             label26.Text = "Rs. 255,964";
             // 
             // label27
             // 
             label27.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label27.Location = new Point(24, 284);
-            label27.Margin = new Padding(4, 0, 4, 0);
+            label27.Location = new Point(17, 193);
             label27.Name = "label27";
-            label27.Size = new Size(314, 59);
+            label27.Size = new Size(220, 40);
             label27.TabIndex = 1;
             label27.Text = "Samsung Galaxy S26 Ultra";
             // 
@@ -897,11 +823,9 @@
             pictureBox12.BackColor = Color.LightGray;
             pictureBox12.BackgroundImage = (Image)resources.GetObject("pictureBox12.BackgroundImage");
             pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox12.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox12.Location = new Point(24, 19);
-            pictureBox12.Margin = new Padding(4);
+            pictureBox12.Location = new Point(-1, -1);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(313, 259);
+            pictureBox12.Size = new Size(251, 191);
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
             // 
@@ -990,11 +914,11 @@
             // 
             // AllProducts
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1669, 1050);
+            ClientSize = new Size(1168, 714);
             Controls.Add(panel12);
             Controls.Add(panel11);
             Controls.Add(panel10);
@@ -1011,6 +935,7 @@
             Controls.Add(label5);
             Controls.Add(panel2);
             Controls.Add(panelHeader);
+            Margin = new Padding(2);
             Name = "AllProducts";
             Text = "ALL Products ";
             Load += AllProducts_Load;
