@@ -44,6 +44,18 @@ namespace Visual.Programming.Project.Grey.Controls
             UIHelper.AddHoverEffect(this, Color.FromArgb(248, 248, 248), Theme.CardBackground);
         }
 
+        private void InitializeComponent()
+        {
+            SuspendLayout();
+            // 
+            // OrderCard
+            // 
+            Name = "OrderCard";
+            Size = new Size(166, 237);
+            ResumeLayout(false);
+
+        }
+
         // Properties to set
         public string ProductName { get; private set; }
 
