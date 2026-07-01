@@ -1,10 +1,18 @@
-using System.Runtime.CompilerServices;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Visual.Programming.Project.Grey
 {
     public partial class HomeForm : Form
     {
-        public HomeForm() => InitializeComponent();
+
+        public HomeForm()
+        {
+            InitializeComponent();
+            Theme.ApplyFormStyle(this);
+            UIHelper.ApplyButtonStyles(this);
+        }
 
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,7 +32,8 @@ namespace Visual.Programming.Project.Grey
 
         private void lblBackToTop_Click(object sender, EventArgs e)
         {
-
+            // Scroll the main products flow panel to top
+            flowProducts.AutoScrollPosition = new Point(0, 0);
         }
 
         private void label23_Click(object sender, EventArgs e)
@@ -72,7 +81,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -83,7 +92,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -94,7 +103,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -145,6 +154,57 @@ namespace Visual.Programming.Project.Grey
         private void picProduct1_Click(object sender, EventArgs e)
         {
             pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+        }
+
+        private void label53_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+                Form3 cartForm = new Form3();
+                cartForm.ShowDialog();
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+                Form3 cartForm = new Form3();
+                cartForm.ShowDialog();
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+                Form3 cartForm = new Form3();
+                cartForm.ShowDialog();
+            }
+        }
+
+        private void panelBackToTop_Paint(object sender, PaintEventArgs e)
+        {
+
+
+            this.AutoScrollPosition = new Point(0, 0);
+
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

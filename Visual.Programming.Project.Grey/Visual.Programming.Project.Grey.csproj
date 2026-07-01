@@ -23,4 +23,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="6.4.0" />
+  </ItemGroup>
+
 </Project>

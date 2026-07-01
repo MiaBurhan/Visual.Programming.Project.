@@ -14,7 +14,8 @@ namespace Visual.Programming.Project.Grey
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-
+            Theme.ApplyFormStyle(this);
+            UIHelper.ApplyButtonStyles(this);
         }
 
         private void lblProduct1_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -59,7 +60,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -70,7 +71,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -81,7 +82,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -92,7 +93,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -103,7 +104,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -114,7 +115,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -125,7 +126,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -136,7 +137,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -147,7 +148,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
@@ -158,7 +159,7 @@ namespace Visual.Programming.Project.Grey
             {
                 string productName = clickedButton.Tag?.ToString() ?? "Product";
 
-                Form3 cartForm = new Form3();
+                Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }

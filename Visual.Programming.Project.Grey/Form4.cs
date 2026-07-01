@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
+using System.Linq;
 using System.Windows.Forms;
+using Visual.Programming.Project.Grey.Controls;
 
 namespace Visual.Programming.Project.Grey
 {
@@ -13,8 +11,13 @@ namespace Visual.Programming.Project.Grey
         public Form4()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            Theme.ApplyFormStyle(this);
 
+            // style buttons across the form
+            ApplyButtonStyles(this);
+
+            // ensure responsive behavior
+            flowPanelOrders.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -23,58 +26,47 @@ namespace Visual.Programming.Project.Grey
             YourOrder_Load(sender, e);
         }
 
+        private void ApplyButtonStyles(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is Button btn)
+                {
+                    Theme.StyleButton(btn);
+                    UIHelper.AddHoverEffect(btn, Color.FromArgb(255, 140, 0), Theme.Accent);
+                }
+
+                // recurse into containers
+                if (c.HasChildren)
+                    ApplyButtonStyles(c);
+            }
+        }
+
         private void YourOrder_Load(object sender, EventArgs e)
         {
             flowPanelOrders.Controls.Clear();
 
-            foreach (var order in OrderManager.Orders)
+            foreach (var order in OrderManager.Orders.ToList())
             {
-                Panel itemPanel = new Panel();
-                itemPanel.Width = flowPanelOrders.Width - 30;
-                itemPanel.Height = 60;
-                itemPanel.BorderStyle = BorderStyle.FixedSingle;
-                itemPanel.Margin = new Padding(5);
+                var card = new OrderCard();
+                card.Width = Math.Max(700, flowPanelOrders.ClientSize.Width - 40);
+                card.SetData(order.ProductName, order.CustomerName, order.CreatedAt, order.PriceDisplay, order.ImagePath);
+                card.BuyAgainClicked += Card_BuyAgainClicked;
+                card.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 
-                Label lbl = new Label();
-                lbl.Text = order.ProductName + "\n" + order.CustomerName;
-                lbl.AutoSize = false;
-                lbl.Width = 300;
-                lbl.Height = 50;
-                lbl.Location = new Point(10, 5);
-                lbl.Font = new Font("Segoe UI", 9, FontStyle.Bold);
-
-                Button btnBuyAgain = new Button();
-                btnBuyAgain.Text = "Buy It Again";
-                btnBuyAgain.Width = 130;
-                btnBuyAgain.Height = 35;
-                btnBuyAgain.Location = new Point(330, 12);
-                btnBuyAgain.BackColor = Color.Orange;
-                btnBuyAgain.Tag = order.ProductName;
-                btnBuyAgain.Click += BtnBuyAgain_Click;
-
-                itemPanel.Controls.Add(lbl);
-                itemPanel.Controls.Add(btnBuyAgain);
-
-                flowPanelOrders.Controls.Add(itemPanel);
+                flowPanelOrders.Controls.Add(card);
             }
         }
 
-        private void BtnBuyAgain_Click(object sender, EventArgs e)
+        private void Card_BuyAgainClicked(object sender, string productName)
         {
-            Button clickedBtn = (Button)sender;
-            string productName = clickedBtn.Tag.ToString();
-
-            OrderManager.Orders.Add(new Order
-            {
-                ProductName = productName,
-                CustomerName = "Repeat Customer",
-                Email = ""
-            });
+            // Add order to history
+            OrderManager.AddOrder(productName, "Repeat Customer", 0m, "");
 
             MessageBox.Show($"{productName}\n\nYou bought this product again successfully!",
                 "Order Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            YourOrder_Load(sender, e);   // list ko refresh kar do naye order ke saath
+            YourOrder_Load(this, EventArgs.Empty);
         }
 
         private void panelBanner_Paint(object sender, PaintEventArgs e)
@@ -84,15 +76,15 @@ namespace Visual.Programming.Project.Grey
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form4 yourOrderForm = new Form4();
-            yourOrderForm.ShowDialog();
+            // Open your orders (current form) - keep behavior but avoid opening duplicate
+            // Bring to front instead
+            this.BringToFront();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             AllProducts dealsForm = new AllProducts();
             dealsForm.Show();
-
         }
     }
 }

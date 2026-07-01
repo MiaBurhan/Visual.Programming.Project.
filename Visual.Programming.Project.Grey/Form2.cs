@@ -13,6 +13,8 @@ namespace Visual.Programming.Project.Grey
         public Products()
         {
             InitializeComponent();
+            Theme.ApplyFormStyle(this);
+            UIHelper.ApplyButtonStyles(this);
         }
     }
 }

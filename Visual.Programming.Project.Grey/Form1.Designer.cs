@@ -103,7 +103,6 @@
             pictureBox6 = new PictureBox();
             panel10 = new Panel();
             button15 = new Button();
-            label52 = new Label();
             label53 = new Label();
             label54 = new Label();
             label55 = new Label();
@@ -111,26 +110,24 @@
             panelBackToTop = new Panel();
             lblBackToTop = new Label();
             panelFooter = new Panel();
+            label52 = new Label();
+            label51 = new Label();
+            label35 = new Label();
             label29 = new Label();
             label28 = new Label();
             label27 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label30 = new Label();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
             label17 = new Label();
             label16 = new Label();
-            label26 = new Label();
+            label3 = new Label();
             label23 = new Label();
-            label22 = new Label();
+            label26 = new Label();
             label18 = new Label();
             label15 = new Label();
             label14 = new Label();
             panel4 = new Panel();
-            label33 = new Label();
-            comboBox1 = new ComboBox();
             label32 = new Label();
             label31 = new Label();
             ShopHub = new Label();
@@ -174,7 +171,7 @@
             panelBanner.Location = new Point(29, 96);
             panelBanner.Margin = new Padding(4);
             panelBanner.Name = "panelBanner";
-            panelBanner.Size = new Size(1636, 265);
+            panelBanner.Size = new Size(1616, 265);
             panelBanner.TabIndex = 0;
             // 
             // panel5
@@ -187,7 +184,7 @@
             panel5.Location = new Point(4, 22);
             panel5.Margin = new Padding(4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(991, 63);
+            panel5.Size = new Size(1202, 63);
             panel5.TabIndex = 5;
             // 
             // button8
@@ -196,7 +193,7 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(818, 4);
+            button8.Location = new Point(1038, 4);
             button8.Margin = new Padding(4);
             button8.Name = "button8";
             button8.Size = new Size(160, 50);
@@ -211,7 +208,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(624, 9);
+            button7.Location = new Point(781, 4);
             button7.Margin = new Padding(4);
             button7.Name = "button7";
             button7.Size = new Size(160, 50);
@@ -226,7 +223,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(430, 9);
+            button6.Location = new Point(526, 13);
             button6.Margin = new Padding(4);
             button6.Name = "button6";
             button6.Size = new Size(160, 50);
@@ -241,7 +238,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(191, 13);
+            button5.Location = new Point(235, 13);
             button5.Margin = new Padding(4);
             button5.Name = "button5";
             button5.Size = new Size(203, 50);
@@ -334,7 +331,7 @@
             panelPerks.Location = new Point(33, 384);
             panelPerks.Margin = new Padding(4);
             panelPerks.Name = "panelPerks";
-            panelPerks.Size = new Size(1625, 68);
+            panelPerks.Size = new Size(1586, 68);
             panelPerks.TabIndex = 1;
             panelPerks.Paint += panel1_Paint;
             // 
@@ -374,7 +371,7 @@
             flowProducts.Location = new Point(29, 456);
             flowProducts.Margin = new Padding(4);
             flowProducts.Name = "flowProducts";
-            flowProducts.Size = new Size(1636, 1059);
+            flowProducts.Size = new Size(1620, 1059);
             flowProducts.TabIndex = 3;
             // 
             // panelCard1
@@ -413,9 +410,9 @@
             lblPrice1.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPrice1.Location = new Point(168, 221);
             lblPrice1.Name = "lblPrice1";
-            lblPrice1.Size = new Size(112, 36);
+            lblPrice1.Size = new Size(97, 36);
             lblPrice1.TabIndex = 4;
-            lblPrice1.Text = "$279.99";
+            lblPrice1.Text = "279.99";
             // 
             // lblName1
             // 
@@ -486,9 +483,9 @@
             label2.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(176, 226);
             label2.Name = "label2";
-            label2.Size = new Size(104, 36);
+            label2.Size = new Size(89, 36);
             label2.TabIndex = 4;
-            label2.Text = " $59.99";
+            label2.Text = " 59.99";
             label2.Click += label2_Click;
             // 
             // label4
@@ -605,9 +602,9 @@
             label36.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label36.Location = new Point(176, 224);
             label36.Name = "label36";
-            label36.Size = new Size(104, 36);
+            label36.Size = new Size(89, 36);
             label36.TabIndex = 6;
-            label36.Text = " $89.99";
+            label36.Text = " 89.99";
             // 
             // button10
             // 
@@ -621,6 +618,7 @@
             button10.TabIndex = 6;
             button10.Text = "Add to Cart";
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // label37
             // 
@@ -869,6 +867,7 @@
             button14.TabIndex = 5;
             button14.Text = "Add to Cart";
             button14.UseVisualStyleBackColor = false;
+            button14.Click += button14_Click;
             // 
             // label48
             // 
@@ -876,9 +875,9 @@
             label48.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label48.Location = new Point(176, 224);
             label48.Name = "label48";
-            label48.Size = new Size(119, 36);
+            label48.Size = new Size(104, 36);
             label48.TabIndex = 6;
-            label48.Text = " $430.99";
+            label48.Text = " 430.99";
             // 
             // label49
             // 
@@ -1052,7 +1051,6 @@
             panel10.BackColor = Color.White;
             panel10.BorderStyle = BorderStyle.FixedSingle;
             panel10.Controls.Add(button15);
-            panel10.Controls.Add(label52);
             panel10.Controls.Add(label53);
             panel10.Controls.Add(label54);
             panel10.Controls.Add(label55);
@@ -1076,17 +1074,7 @@
             button15.TabIndex = 5;
             button15.Text = "Add to Cart";
             button15.UseVisualStyleBackColor = false;
-            // 
-            // label52
-            // 
-            label52.AutoSize = true;
-            label52.ForeColor = Color.FromArgb(255, 153, 0);
-            label52.Location = new Point(71, 199);
-            label52.Margin = new Padding(4, 0, 4, 0);
-            label52.Name = "label52";
-            label52.Size = new Size(130, 25);
-            label52.TabIndex = 3;
-            label52.Text = "★ 4.8  (45,600)";
+            button15.Click += button15_Click;
             // 
             // label53
             // 
@@ -1094,9 +1082,10 @@
             label53.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label53.Location = new Point(176, 224);
             label53.Name = "label53";
-            label53.Size = new Size(104, 36);
+            label53.Size = new Size(89, 36);
             label53.TabIndex = 6;
-            label53.Text = " $59.99";
+            label53.Text = " $9.99";
+            label53.Click += label53_Click;
             // 
             // label54
             // 
@@ -1141,13 +1130,14 @@
             panelBackToTop.Name = "panelBackToTop";
             panelBackToTop.Size = new Size(1632, 46);
             panelBackToTop.TabIndex = 3;
+            panelBackToTop.Paint += panelBackToTop_Paint;
             // 
             // lblBackToTop
             // 
             lblBackToTop.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblBackToTop.AutoSize = true;
             lblBackToTop.ForeColor = Color.White;
-            lblBackToTop.Location = new Point(469, 19);
+            lblBackToTop.Location = new Point(652, 10);
             lblBackToTop.Margin = new Padding(4, 0, 4, 0);
             lblBackToTop.Name = "lblBackToTop";
             lblBackToTop.Size = new Size(103, 25);
@@ -1160,20 +1150,20 @@
             // 
             panelFooter.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelFooter.BackColor = Color.FromArgb(19, 25, 33);
+            panelFooter.Controls.Add(label52);
+            panelFooter.Controls.Add(label51);
+            panelFooter.Controls.Add(label35);
             panelFooter.Controls.Add(label29);
             panelFooter.Controls.Add(label28);
             panelFooter.Controls.Add(label27);
-            panelFooter.Controls.Add(label25);
-            panelFooter.Controls.Add(label24);
-            panelFooter.Controls.Add(label30);
             panelFooter.Controls.Add(label21);
             panelFooter.Controls.Add(label20);
             panelFooter.Controls.Add(label19);
             panelFooter.Controls.Add(label17);
             panelFooter.Controls.Add(label16);
-            panelFooter.Controls.Add(label26);
+            panelFooter.Controls.Add(label3);
             panelFooter.Controls.Add(label23);
-            panelFooter.Controls.Add(label22);
+            panelFooter.Controls.Add(label26);
             panelFooter.Controls.Add(label18);
             panelFooter.Controls.Add(label15);
             panelFooter.Controls.Add(label14);
@@ -1184,77 +1174,78 @@
             panelFooter.TabIndex = 4;
             panelFooter.Paint += panelFooter_Paint;
             // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label52.ForeColor = SystemColors.ButtonHighlight;
+            label52.Location = new Point(1361, 354);
+            label52.Margin = new Padding(4, 0, 4, 0);
+            label52.Name = "label52";
+            label52.Size = new Size(115, 20);
+            label52.TabIndex = 26;
+            label52.Text = "Shoping Rates";
+            label52.Click += label52_Click;
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label51.ForeColor = SystemColors.ButtonHighlight;
+            label51.Location = new Point(1361, 240);
+            label51.Margin = new Padding(4, 0, 4, 0);
+            label51.Name = "label51";
+            label51.Size = new Size(87, 20);
+            label51.TabIndex = 25;
+            label51.Text = "Your Order";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label35.ForeColor = SystemColors.ButtonHighlight;
+            label35.Location = new Point(1361, 131);
+            label35.Margin = new Padding(4, 0, 4, 0);
+            label35.Name = "label35";
+            label35.Size = new Size(98, 20);
+            label35.TabIndex = 24;
+            label35.Text = "Your Acount";
+            // 
             // label29
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label29.ForeColor = SystemColors.ButtonHighlight;
-            label29.Location = new Point(1047, 354);
+            label29.Location = new Point(932, 357);
             label29.Margin = new Padding(4, 0, 4, 0);
             label29.Name = "label29";
-            label29.Size = new Size(115, 20);
-            label29.TabIndex = 26;
-            label29.Text = "Shoping Rates";
+            label29.Size = new Size(73, 20);
+            label29.TabIndex = 23;
+            label29.Text = "Gift Card";
             // 
             // label28
             // 
             label28.AutoSize = true;
             label28.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label28.ForeColor = SystemColors.ButtonHighlight;
-            label28.Location = new Point(1047, 240);
+            label28.Location = new Point(932, 243);
             label28.Margin = new Padding(4, 0, 4, 0);
             label28.Name = "label28";
-            label28.Size = new Size(87, 20);
-            label28.TabIndex = 25;
-            label28.Text = "Your Order";
+            label28.Size = new Size(158, 20);
+            label28.TabIndex = 22;
+            label28.Text = "ShopHub Store Card";
             // 
             // label27
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.ForeColor = SystemColors.ButtonHighlight;
-            label27.Location = new Point(1047, 131);
+            label27.Location = new Point(932, 147);
             label27.Margin = new Padding(4, 0, 4, 0);
             label27.Name = "label27";
-            label27.Size = new Size(98, 20);
-            label27.TabIndex = 24;
-            label27.Text = "Your Acount";
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label25.ForeColor = SystemColors.ButtonHighlight;
-            label25.Location = new Point(734, 354);
-            label25.Margin = new Padding(4, 0, 4, 0);
-            label25.Name = "label25";
-            label25.Size = new Size(73, 20);
-            label25.TabIndex = 23;
-            label25.Text = "Gift Card";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.ForeColor = SystemColors.ButtonHighlight;
-            label24.Location = new Point(734, 240);
-            label24.Margin = new Padding(4, 0, 4, 0);
-            label24.Name = "label24";
-            label24.Size = new Size(158, 20);
-            label24.TabIndex = 22;
-            label24.Text = "ShopHub Store Card";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label30.ForeColor = SystemColors.ButtonHighlight;
-            label30.Location = new Point(734, 144);
-            label30.Margin = new Padding(4, 0, 4, 0);
-            label30.Name = "label30";
-            label30.Size = new Size(150, 20);
-            label30.TabIndex = 21;
-            label30.Text = "ShopHub Visa Card";
+            label27.Size = new Size(150, 20);
+            label27.TabIndex = 21;
+            label27.Text = "ShopHub Visa Card";
             // 
             // label21
             // 
@@ -1316,17 +1307,17 @@
             label16.TabIndex = 16;
             label16.Text = "Careers";
             // 
-            // label26
+            // label3
             // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label26.ForeColor = SystemColors.ButtonHighlight;
-            label26.Location = new Point(1047, 38);
-            label26.Margin = new Padding(4, 0, 4, 0);
-            label26.Name = "label26";
-            label26.Size = new Size(174, 25);
-            label26.TabIndex = 12;
-            label26.Text = "Let Us Help You ";
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(1364, 36);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(174, 25);
+            label3.TabIndex = 12;
+            label3.Text = "Let Us Help You ";
             // 
             // label23
             // 
@@ -1340,17 +1331,17 @@
             label23.TabIndex = 9;
             label23.Click += label23_Click;
             // 
-            // label22
+            // label26
             // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.ForeColor = SystemColors.ButtonHighlight;
-            label22.Location = new Point(724, 38);
-            label22.Margin = new Padding(4, 0, 4, 0);
-            label22.Name = "label22";
-            label22.Size = new Size(176, 25);
-            label22.TabIndex = 8;
-            label22.Text = "Payment Product";
+            label26.AutoSize = true;
+            label26.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label26.ForeColor = SystemColors.ButtonHighlight;
+            label26.Location = new Point(922, 41);
+            label26.Margin = new Padding(4, 0, 4, 0);
+            label26.Name = "label26";
+            label26.Size = new Size(176, 25);
+            label26.TabIndex = 8;
+            label26.Text = "Payment Product";
             // 
             // label18
             // 
@@ -1392,8 +1383,6 @@
             // 
             panel4.AutoSize = true;
             panel4.BackColor = Color.FromArgb(19, 25, 33);
-            panel4.Controls.Add(label33);
-            panel4.Controls.Add(comboBox1);
             panel4.Controls.Add(label32);
             panel4.Controls.Add(label31);
             panel4.Controls.Add(ShopHub);
@@ -1403,28 +1392,6 @@
             panel4.Size = new Size(1636, 358);
             panel4.TabIndex = 4;
             panel4.Paint += panel4_Paint;
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.ForeColor = SystemColors.ButtonHighlight;
-            label33.Location = new Point(489, 32);
-            label33.Margin = new Padding(4, 0, 4, 0);
-            label33.Name = "label33";
-            label33.Size = new Size(64, 25);
-            label33.TabIndex = 4;
-            label33.Text = "Search";
-            // 
-            // comboBox1
-            // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "All", "Electronics", "Computers", "Clothing", "Kitchen", "Toys", "Appliances", "Outdoors" });
-            comboBox1.Location = new Point(604, 21);
-            comboBox1.Margin = new Padding(4);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(258, 33);
-            comboBox1.TabIndex = 3;
             // 
             // label32
             // 
@@ -1468,7 +1435,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
-            ClientSize = new Size(1663, 1050);
+            ClientSize = new Size(1624, 1050);
             Controls.Add(flowProducts);
             Controls.Add(panelPerks);
             Controls.Add(panelBanner);
@@ -1561,35 +1528,14 @@
         private PictureBox pictureBox3;
         private Panel panelBackToTop;
         private Label lblBackToTop;
-        private Panel panelFooter;
-        private Label label14;
-        private Label label23;
-        private Label label22;
-        private Label label18;
-        private Label label15;
-        private Label label26;
-        private Label label19;
-        private Label label17;
-        private Label label16;
-        private Label label29;
-        private Label label28;
-        private Label label27;
-        private Label label25;
-        private Label label24;
-        private Label label30;
-        private Label label21;
-        private Label label20;
         private PictureBox pictureBox4;
         private Panel panel4;
         private Label ShopHub;
         private Label label32;
         private Label label31;
-        private Label label33;
-        private ComboBox comboBox1;
         private Panel panel5;
         private Button button4;
         private Button button8;
-        private Button button7;
         private Button button6;
         private Button button5;
         private Button button9;
@@ -1624,10 +1570,28 @@
         private PictureBox pictureBox7;
         private Panel panel10;
         private Button button15;
-        private Label label52;
         private Label label53;
         private Label label54;
         private Label label55;
         private PictureBox pictureBox9;
+        private Button button7;
+        private Panel panelFooter;
+        private Label label52;
+        private Label label51;
+        private Label label35;
+        private Label label29;
+        private Label label28;
+        private Label label27;
+        private Label label21;
+        private Label label20;
+        private Label label19;
+        private Label label17;
+        private Label label16;
+        private Label label3;
+        private Label label23;
+        private Label label26;
+        private Label label18;
+        private Label label15;
+        private Label label14;
     }
 }
