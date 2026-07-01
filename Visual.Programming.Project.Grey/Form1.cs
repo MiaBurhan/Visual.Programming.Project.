@@ -58,61 +58,105 @@ namespace Visual.Programming.Project.Grey
 
         private void button8_Click(object sender, EventArgs e)
         {
-            AccountForm accountForm = new AccountForm();
-            accountForm.Show();
+            try
+            {
+                AccountForm accountForm = new AccountForm();
+                accountForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening account form: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AllProducts dealsForm = new AllProducts();
-            dealsForm.Show();
-
+            try
+            {
+                AllProducts dealsForm = new AllProducts();
+                dealsForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AllProducts frm = new AllProducts();
-            frm.ShowDialog();
+            try
+            {
+                AllProducts frm = new AllProducts();
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnAddToCart1_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            try
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
+                if (sender is Button clickedButton)
+                {
+                    string productName = clickedButton.Tag?.ToString() ?? "Product";
+                    Form3 cartForm = new Form3(productName);
+                    cartForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            try
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
+                if (sender is Button clickedButton)
+                {
+                    string productName = clickedButton.Tag?.ToString() ?? "Product";
+                    Form3 cartForm = new Form3(productName);
+                    cartForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            try
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
+                if (sender is Button clickedButton)
+                {
+                    string productName = clickedButton.Tag?.ToString() ?? "Product";
+                    Form3 cartForm = new Form3(productName);
+                    cartForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Open the orders form - use Form4 as the orders dialog
-            Form4 yourOrderForm = new Form4();
-            yourOrderForm.ShowDialog();
+            try
+            {
+                Form4 yourOrderForm = new Form4();
+                yourOrderForm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening orders: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void lblCategory1_Click(object sender, EventArgs e)
@@ -132,8 +176,15 @@ namespace Visual.Programming.Project.Grey
 
         private void btnShopNow_Click(object sender, EventArgs e)
         {
-            AllProducts frm = new AllProducts();
-            frm.ShowDialog();
+            try
+            {
+                AllProducts frm = new AllProducts();
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void lblPerks_Click(object sender, EventArgs e)
@@ -163,34 +214,52 @@ namespace Visual.Programming.Project.Grey
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            try
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3();
-                cartForm.ShowDialog();
+                if (sender is Button clickedButton)
+                {
+                    string productName = clickedButton.Tag?.ToString() ?? "Product";
+                    Form3 cartForm = new Form3(productName);
+                    cartForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            try
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3();
-                cartForm.ShowDialog();
+                if (sender is Button clickedButton)
+                {
+                    string productName = clickedButton.Tag?.ToString() ?? "Product";
+                    Form3 cartForm = new Form3(productName);
+                    cartForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            try
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3();
-                cartForm.ShowDialog();
+                if (sender is Button clickedButton)
+                {
+                    string productName = clickedButton.Tag?.ToString() ?? "Product";
+                    Form3 cartForm = new Form3(productName);
+                    cartForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -203,6 +272,21 @@ namespace Visual.Programming.Project.Grey
         }
 
         private void label52_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelBanner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowProducts_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

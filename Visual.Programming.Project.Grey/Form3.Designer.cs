@@ -111,7 +111,6 @@
             textBox6.PlaceholderText = "ENTER YOUR PASWARD ";
             textBox6.Size = new Size(375, 31);
             textBox6.TabIndex = 17;
-            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // textBox5
             // 
@@ -136,7 +135,6 @@
             textBox3.PlaceholderText = "ENTER  YOUR ADDRESS";
             textBox3.Size = new Size(375, 31);
             textBox3.TabIndex = 14;
-            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // btnShopNow
             // 
@@ -242,7 +240,7 @@
             lblLimitedTime.AutoSize = true;
             lblLimitedTime.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             lblLimitedTime.ForeColor = Color.FromArgb(255, 153, 0);
-            lblLimitedTime.Location = new Point(427, 116);
+            lblLimitedTime.Location = new Point(515, 17);
             lblLimitedTime.Name = "lblLimitedTime";
             lblLimitedTime.Size = new Size(198, 41);
             lblLimitedTime.TabIndex = 0;
@@ -253,7 +251,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(394, 33);
+            label5.Location = new Point(459, 92);
             label5.Name = "label5";
             label5.Size = new Size(303, 67);
             label5.TabIndex = 1;
@@ -290,7 +288,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(12, 71);
+            label7.Location = new Point(19, 65);
             label7.Name = "label7";
             label7.Size = new Size(364, 54);
             label7.TabIndex = 4;

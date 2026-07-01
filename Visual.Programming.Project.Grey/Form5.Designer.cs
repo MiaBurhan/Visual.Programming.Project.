@@ -94,6 +94,12 @@
             label26 = new Label();
             label27 = new Label();
             pictureBox12 = new PictureBox();
+            panel13 = new Panel();
+            button13 = new Button();
+            button14 = new Button();
+            button15 = new Button();
+            button16 = new Button();
+            button17 = new Button();
             panelHeader.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -119,17 +125,19 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panelHeader
             // 
             panelHeader.BackColor = Color.FromArgb(35, 47, 62);
+            panelHeader.Controls.Add(panel13);
             panelHeader.Controls.Add(lblTitle);
             panelHeader.Dock = DockStyle.Top;
             panelHeader.Location = new Point(0, 0);
-            panelHeader.Margin = new Padding(4, 4, 4, 4);
+            panelHeader.Margin = new Padding(4);
             panelHeader.Name = "panelHeader";
-            panelHeader.Size = new Size(1643, 79);
+            panelHeader.Size = new Size(1643, 115);
             panelHeader.TabIndex = 2;
             // 
             // lblTitle
@@ -153,7 +161,7 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(pictureBox2);
             panel2.Location = new Point(430, 196);
-            panel2.Margin = new Padding(4, 4, 4, 4);
+            panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
             panel2.Size = new Size(358, 487);
             panel2.TabIndex = 5;
@@ -162,7 +170,7 @@
             // 
             button1.BackColor = Color.Gold;
             button1.Location = new Point(24, 406);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(314, 51);
             button1.TabIndex = 3;
@@ -198,7 +206,7 @@
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             pictureBox2.Location = new Point(24, 19);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(313, 259);
             pictureBox2.TabIndex = 0;
@@ -225,7 +233,7 @@
             panel3.Controls.Add(label4);
             panel3.Controls.Add(pictureBox3);
             panel3.Location = new Point(839, 196);
-            panel3.Margin = new Padding(4, 4, 4, 4);
+            panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
             panel3.Size = new Size(358, 487);
             panel3.TabIndex = 12;
@@ -234,7 +242,7 @@
             // 
             button2.BackColor = Color.Gold;
             button2.Location = new Point(24, 406);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(314, 51);
             button2.TabIndex = 3;
@@ -269,7 +277,7 @@
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
             pictureBox3.Location = new Point(24, 19);
-            pictureBox3.Margin = new Padding(4, 4, 4, 4);
+            pictureBox3.Margin = new Padding(4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(313, 259);
             pictureBox3.TabIndex = 0;
@@ -284,7 +292,7 @@
             panel1.Controls.Add(label14);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(1237, 196);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(358, 487);
             panel1.TabIndex = 6;
@@ -293,7 +301,7 @@
             // 
             button6.BackColor = Color.Gold;
             button6.Location = new Point(24, 406);
-            button6.Margin = new Padding(4, 4, 4, 4);
+            button6.Margin = new Padding(4);
             button6.Name = "button6";
             button6.Size = new Size(314, 51);
             button6.TabIndex = 3;
@@ -329,7 +337,7 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Location = new Point(24, 19);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(313, 259);
             pictureBox1.TabIndex = 0;
@@ -344,7 +352,7 @@
             panel7.Controls.Add(label16);
             panel7.Controls.Add(pictureBox7);
             panel7.Location = new Point(36, 196);
-            panel7.Margin = new Padding(4, 4, 4, 4);
+            panel7.Margin = new Padding(4);
             panel7.Name = "panel7";
             panel7.Size = new Size(358, 487);
             panel7.TabIndex = 6;
@@ -353,7 +361,7 @@
             // 
             button7.BackColor = Color.Gold;
             button7.Location = new Point(24, 406);
-            button7.Margin = new Padding(4, 4, 4, 4);
+            button7.Margin = new Padding(4);
             button7.Name = "button7";
             button7.Size = new Size(314, 51);
             button7.TabIndex = 3;
@@ -388,7 +396,7 @@
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BorderStyle = BorderStyle.FixedSingle;
             pictureBox7.Location = new Point(17, 19);
-            pictureBox7.Margin = new Padding(4, 4, 4, 4);
+            pictureBox7.Margin = new Padding(4);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(313, 259);
             pictureBox7.TabIndex = 0;
@@ -415,7 +423,7 @@
             panel4.Controls.Add(label8);
             panel4.Controls.Add(pictureBox4);
             panel4.Location = new Point(29, 825);
-            panel4.Margin = new Padding(4, 4, 4, 4);
+            panel4.Margin = new Padding(4);
             panel4.Name = "panel4";
             panel4.Size = new Size(358, 487);
             panel4.TabIndex = 7;
@@ -424,7 +432,7 @@
             // 
             button3.BackColor = Color.Gold;
             button3.Location = new Point(24, 406);
-            button3.Margin = new Padding(4, 4, 4, 4);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
             button3.Size = new Size(314, 51);
             button3.TabIndex = 3;
@@ -460,7 +468,7 @@
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox4.BorderStyle = BorderStyle.FixedSingle;
             pictureBox4.Location = new Point(24, 19);
-            pictureBox4.Margin = new Padding(4, 4, 4, 4);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(313, 259);
             pictureBox4.TabIndex = 0;
@@ -475,7 +483,7 @@
             panel5.Controls.Add(label10);
             panel5.Controls.Add(pictureBox5);
             panel5.Location = new Point(430, 825);
-            panel5.Margin = new Padding(4, 4, 4, 4);
+            panel5.Margin = new Padding(4);
             panel5.Name = "panel5";
             panel5.Size = new Size(358, 487);
             panel5.TabIndex = 8;
@@ -484,7 +492,7 @@
             // 
             button4.BackColor = Color.Gold;
             button4.Location = new Point(24, 406);
-            button4.Margin = new Padding(4, 4, 4, 4);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(314, 51);
             button4.TabIndex = 3;
@@ -520,7 +528,7 @@
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox5.BorderStyle = BorderStyle.FixedSingle;
             pictureBox5.Location = new Point(24, 19);
-            pictureBox5.Margin = new Padding(4, 4, 4, 4);
+            pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(313, 259);
             pictureBox5.TabIndex = 0;
@@ -535,7 +543,7 @@
             panel6.Controls.Add(label12);
             panel6.Controls.Add(pictureBox6);
             panel6.Location = new Point(839, 825);
-            panel6.Margin = new Padding(4, 4, 4, 4);
+            panel6.Margin = new Padding(4);
             panel6.Name = "panel6";
             panel6.Size = new Size(358, 487);
             panel6.TabIndex = 8;
@@ -544,7 +552,7 @@
             // 
             button5.BackColor = Color.Gold;
             button5.Location = new Point(24, 406);
-            button5.Margin = new Padding(4, 4, 4, 4);
+            button5.Margin = new Padding(4);
             button5.Name = "button5";
             button5.Size = new Size(314, 51);
             button5.TabIndex = 3;
@@ -580,7 +588,7 @@
             pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox6.BorderStyle = BorderStyle.FixedSingle;
             pictureBox6.Location = new Point(24, 19);
-            pictureBox6.Margin = new Padding(4, 4, 4, 4);
+            pictureBox6.Margin = new Padding(4);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(313, 259);
             pictureBox6.TabIndex = 0;
@@ -595,7 +603,7 @@
             panel8.Controls.Add(label18);
             panel8.Controls.Add(pictureBox8);
             panel8.Location = new Point(1237, 825);
-            panel8.Margin = new Padding(4, 4, 4, 4);
+            panel8.Margin = new Padding(4);
             panel8.Name = "panel8";
             panel8.Size = new Size(358, 487);
             panel8.TabIndex = 8;
@@ -604,7 +612,7 @@
             // 
             button8.BackColor = Color.Gold;
             button8.Location = new Point(24, 406);
-            button8.Margin = new Padding(4, 4, 4, 4);
+            button8.Margin = new Padding(4);
             button8.Name = "button8";
             button8.Size = new Size(314, 51);
             button8.TabIndex = 3;
@@ -640,7 +648,7 @@
             pictureBox8.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox8.BorderStyle = BorderStyle.FixedSingle;
             pictureBox8.Location = new Point(24, 19);
-            pictureBox8.Margin = new Padding(4, 4, 4, 4);
+            pictureBox8.Margin = new Padding(4);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(313, 259);
             pictureBox8.TabIndex = 0;
@@ -666,7 +674,7 @@
             panel9.Controls.Add(label21);
             panel9.Controls.Add(pictureBox9);
             panel9.Location = new Point(29, 1440);
-            panel9.Margin = new Padding(4, 4, 4, 4);
+            panel9.Margin = new Padding(4);
             panel9.Name = "panel9";
             panel9.Size = new Size(358, 487);
             panel9.TabIndex = 8;
@@ -675,7 +683,7 @@
             // 
             button9.BackColor = Color.Gold;
             button9.Location = new Point(24, 406);
-            button9.Margin = new Padding(4, 4, 4, 4);
+            button9.Margin = new Padding(4);
             button9.Name = "button9";
             button9.Size = new Size(314, 51);
             button9.TabIndex = 3;
@@ -711,7 +719,7 @@
             pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox9.BorderStyle = BorderStyle.FixedSingle;
             pictureBox9.Location = new Point(24, 19);
-            pictureBox9.Margin = new Padding(4, 4, 4, 4);
+            pictureBox9.Margin = new Padding(4);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(313, 259);
             pictureBox9.TabIndex = 0;
@@ -726,7 +734,7 @@
             panel10.Controls.Add(label23);
             panel10.Controls.Add(pictureBox10);
             panel10.Location = new Point(430, 1440);
-            panel10.Margin = new Padding(4, 4, 4, 4);
+            panel10.Margin = new Padding(4);
             panel10.Name = "panel10";
             panel10.Size = new Size(358, 487);
             panel10.TabIndex = 9;
@@ -735,7 +743,7 @@
             // 
             button10.BackColor = Color.Gold;
             button10.Location = new Point(24, 406);
-            button10.Margin = new Padding(4, 4, 4, 4);
+            button10.Margin = new Padding(4);
             button10.Name = "button10";
             button10.Size = new Size(314, 51);
             button10.TabIndex = 3;
@@ -771,7 +779,7 @@
             pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox10.BorderStyle = BorderStyle.FixedSingle;
             pictureBox10.Location = new Point(24, 19);
-            pictureBox10.Margin = new Padding(4, 4, 4, 4);
+            pictureBox10.Margin = new Padding(4);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(313, 259);
             pictureBox10.TabIndex = 0;
@@ -786,7 +794,7 @@
             panel11.Controls.Add(label25);
             panel11.Controls.Add(pictureBox11);
             panel11.Location = new Point(839, 1440);
-            panel11.Margin = new Padding(4, 4, 4, 4);
+            panel11.Margin = new Padding(4);
             panel11.Name = "panel11";
             panel11.Size = new Size(358, 487);
             panel11.TabIndex = 9;
@@ -795,7 +803,7 @@
             // 
             button11.BackColor = Color.Gold;
             button11.Location = new Point(24, 406);
-            button11.Margin = new Padding(4, 4, 4, 4);
+            button11.Margin = new Padding(4);
             button11.Name = "button11";
             button11.Size = new Size(314, 51);
             button11.TabIndex = 3;
@@ -831,7 +839,7 @@
             pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox11.BorderStyle = BorderStyle.FixedSingle;
             pictureBox11.Location = new Point(24, 19);
-            pictureBox11.Margin = new Padding(4, 4, 4, 4);
+            pictureBox11.Margin = new Padding(4);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(313, 259);
             pictureBox11.TabIndex = 0;
@@ -846,7 +854,7 @@
             panel12.Controls.Add(label27);
             panel12.Controls.Add(pictureBox12);
             panel12.Location = new Point(1237, 1440);
-            panel12.Margin = new Padding(4, 4, 4, 4);
+            panel12.Margin = new Padding(4);
             panel12.Name = "panel12";
             panel12.Size = new Size(358, 487);
             panel12.TabIndex = 9;
@@ -855,7 +863,7 @@
             // 
             button12.BackColor = Color.Gold;
             button12.Location = new Point(24, 406);
-            button12.Margin = new Padding(4, 4, 4, 4);
+            button12.Margin = new Padding(4);
             button12.Name = "button12";
             button12.Size = new Size(314, 51);
             button12.TabIndex = 3;
@@ -891,11 +899,94 @@
             pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox12.BorderStyle = BorderStyle.FixedSingle;
             pictureBox12.Location = new Point(24, 19);
-            pictureBox12.Margin = new Padding(4, 4, 4, 4);
+            pictureBox12.Margin = new Padding(4);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(313, 259);
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
+            // 
+            // panel13
+            // 
+            panel13.Controls.Add(button13);
+            panel13.Controls.Add(button14);
+            panel13.Controls.Add(button15);
+            panel13.Controls.Add(button16);
+            panel13.Controls.Add(button17);
+            panel13.Location = new Point(220, 26);
+            panel13.Margin = new Padding(4);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(1202, 63);
+            panel13.TabIndex = 6;
+            // 
+            // button13
+            // 
+            button13.BackColor = Color.FromArgb(35, 47, 62);
+            button13.FlatStyle = FlatStyle.Flat;
+            button13.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button13.ForeColor = Color.White;
+            button13.Location = new Point(1038, 4);
+            button13.Margin = new Padding(4);
+            button13.Name = "button13";
+            button13.Size = new Size(160, 50);
+            button13.TabIndex = 8;
+            button13.Text = "Acount";
+            button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            button14.BackColor = Color.FromArgb(35, 47, 62);
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button14.ForeColor = Color.White;
+            button14.Location = new Point(781, 4);
+            button14.Margin = new Padding(4);
+            button14.Name = "button14";
+            button14.Size = new Size(160, 50);
+            button14.TabIndex = 7;
+            button14.Text = "All Products";
+            button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            button15.BackColor = Color.FromArgb(35, 47, 62);
+            button15.FlatStyle = FlatStyle.Flat;
+            button15.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button15.ForeColor = Color.White;
+            button15.Location = new Point(526, 13);
+            button15.Margin = new Padding(4);
+            button15.Name = "button15";
+            button15.Size = new Size(160, 50);
+            button15.TabIndex = 6;
+            button15.Text = "Cart ";
+            button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            button16.BackColor = Color.FromArgb(35, 47, 62);
+            button16.FlatStyle = FlatStyle.Flat;
+            button16.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button16.ForeColor = Color.White;
+            button16.Location = new Point(235, 13);
+            button16.Margin = new Padding(4);
+            button16.Name = "button16";
+            button16.Size = new Size(203, 50);
+            button16.TabIndex = 5;
+            button16.Text = "Your order ";
+            button16.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            button17.BackColor = Color.FromArgb(35, 47, 62);
+            button17.FlatStyle = FlatStyle.Flat;
+            button17.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button17.ForeColor = Color.White;
+            button17.Location = new Point(-4, 13);
+            button17.Margin = new Padding(4);
+            button17.Name = "button17";
+            button17.Size = new Size(160, 50);
+            button17.TabIndex = 0;
+            button17.Text = "Home";
+            button17.UseVisualStyleBackColor = false;
             // 
             // AllProducts
             // 
@@ -949,6 +1040,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            panel13.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1020,5 +1112,11 @@
         private Label label26;
         private Label label27;
         private PictureBox pictureBox12;
+        private Panel panel13;
+        private Button button13;
+        private Button button14;
+        private Button button15;
+        private Button button16;
+        private Button button17;
     }
 }
