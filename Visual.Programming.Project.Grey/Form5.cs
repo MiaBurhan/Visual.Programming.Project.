@@ -15,7 +15,8 @@ namespace Visual.Programming.Project.Grey
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             Theme.ApplyFormStyle(this);
-            UIHelper.ApplyButtonStyles(this);
+            //UIHelper.ApplyButtonStyles(this);
+
         }
 
         private void lblProduct1_Click(object sender, EventArgs e)
@@ -173,6 +174,11 @@ namespace Visual.Programming.Project.Grey
                 Form3 cartForm = new Form3();
                 cartForm.ShowDialog();
             }
+        }
+
+        private void panelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -11,7 +11,10 @@ namespace Visual.Programming.Project.Grey
         {
             InitializeComponent();
             Theme.ApplyFormStyle(this);
-            UIHelper.ApplyButtonStyles(this);
+            //UIHelper.ApplyButtonStyles(this);
+            //panelBanner.Location = new Point(0, 0);
+            panelBanner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            flowProducts.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         }
 
 
@@ -23,6 +26,7 @@ namespace Visual.Programming.Project.Grey
         private void Form1_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -205,6 +209,79 @@ namespace Visual.Programming.Project.Grey
         private void label52_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panelBanner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShopHub_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click_2(object sender, EventArgs e)
+        {
+            AccountForm af = new AccountForm();
+            af.Show();
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            AllProducts all = new AllProducts();
+            all.Show();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Form4 yorder = new Form4();
+            yorder.Show();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
         }
     }
 }

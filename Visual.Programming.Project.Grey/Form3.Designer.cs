@@ -111,7 +111,7 @@
             textBox6.PlaceholderText = "ENTER YOUR PASWARD ";
             textBox6.Size = new Size(375, 31);
             textBox6.TabIndex = 17;
-            textBox6.TextChanged += textBox6_TextChanged;
+            //textBox6.TextChanged += textBox6_TextChanged;
             // 
             // textBox5
             // 
@@ -136,7 +136,7 @@
             textBox3.PlaceholderText = "ENTER  YOUR ADDRESS";
             textBox3.Size = new Size(375, 31);
             textBox3.TabIndex = 14;
-            textBox3.TextChanged += textBox3_TextChanged;
+            //textBox3.TextChanged += textBox3_TextChanged;
             // 
             // btnShopNow
             // 
