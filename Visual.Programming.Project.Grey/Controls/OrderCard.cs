@@ -69,11 +69,11 @@ namespace Visual.Programming.Project.Grey.Controls
             if (!string.IsNullOrWhiteSpace(imagePath) && File.Exists(imagePath))
             {
                 try { _picture.Image = Image.FromFile(imagePath); }
-                catch { _picture.Image = Properties.Resources.batman; }
+                catch { _picture.Image = Properties.Resources.box; }
             }
             else
             {
-                _picture.Image = Properties.Resources.batman;
+                _picture.Image = Properties.Resources.box;
             }
         }
     }

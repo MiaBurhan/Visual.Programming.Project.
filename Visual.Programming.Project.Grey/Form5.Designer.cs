@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllProducts));
             panelHeader = new Panel();
-            lblTitle = new Label();
             panel2 = new Panel();
             button1 = new Button();
             label1 = new Label();
@@ -94,6 +93,8 @@
             label26 = new Label();
             label27 = new Label();
             pictureBox12 = new PictureBox();
+            label28 = new Label();
+            panel14 = new Panel();
             panelHeader.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -124,25 +125,14 @@
             // panelHeader
             // 
             panelHeader.BackColor = Color.FromArgb(35, 47, 62);
-            panelHeader.Controls.Add(lblTitle);
+            panelHeader.Controls.Add(label28);
+            panelHeader.Controls.Add(panel14);
             panelHeader.Dock = DockStyle.Top;
             panelHeader.Location = new Point(0, 0);
             panelHeader.Name = "panelHeader";
             panelHeader.Size = new Size(1602, 64);
             panelHeader.TabIndex = 2;
             panelHeader.Paint += panelHeader_Paint;
-            // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(20, 15);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(109, 30);
-            lblTitle.TabIndex = 0;
-            lblTitle.Text = "ShopHub";
-            lblTitle.Click += lblTitle_Click;
             // 
             // panel2
             // 
@@ -869,6 +859,30 @@
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
             // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.BackColor = Color.Transparent;
+            label28.FlatStyle = FlatStyle.Flat;
+            label28.Font = new Font("Agency FB", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label28.ForeColor = Color.White;
+            label28.Location = new Point(20, 11);
+            label28.Name = "label28";
+            label28.Size = new Size(107, 39);
+            label28.TabIndex = 11;
+            label28.Text = "ShopHub";
+            label28.Click += label28_Click;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.Transparent;
+            panel14.BackgroundImage = (Image)resources.GetObject("panel14.BackgroundImage");
+            panel14.BackgroundImageLayout = ImageLayout.Zoom;
+            panel14.Location = new Point(115, 7);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(58, 48);
+            panel14.TabIndex = 12;
+            // 
             // AllProducts
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -929,7 +943,6 @@
         #endregion
 
         private Panel panelHeader;
-        private Label lblTitle;
         private Panel panel2;
         private Label label1;
         private Label label2;
@@ -993,5 +1006,7 @@
         private Button button18;
         private Button button19;
         private Button button20;
+        private Label label28;
+        private Panel panel14;
     }
 }

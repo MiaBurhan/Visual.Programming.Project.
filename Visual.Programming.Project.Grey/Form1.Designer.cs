@@ -45,6 +45,7 @@
             lblSubtitle = new Label();
             label1 = new Label();
             lblLimitedTime = new Label();
+            panel14 = new Panel();
             panel10 = new Panel();
             label22 = new Label();
             label24 = new Label();
@@ -65,14 +66,15 @@
             label64 = new Label();
             lblPerks = new Label();
             panel2 = new Panel();
+            label2 = new Label();
+            label5 = new Label();
             panel12 = new Panel();
             button9 = new Button();
-            label2 = new Label();
             panel3 = new Panel();
+            label3 = new Label();
             label4 = new Label();
             panel11 = new Panel();
             button1 = new Button();
-            label3 = new Label();
             panel7 = new Panel();
             label15 = new Label();
             label9 = new Label();
@@ -84,12 +86,11 @@
             label14 = new Label();
             flowProducts = new FlowLayoutPanel();
             panel6 = new Panel();
+            label7 = new Label();
+            label8 = new Label();
             panel13 = new Panel();
             button10 = new Button();
-            label7 = new Label();
             panel9 = new Panel();
-            label5 = new Label();
-            label8 = new Label();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             panelBanner.SuspendLayout();
@@ -111,6 +112,7 @@
             panel4.Controls.Add(label31);
             panel4.Controls.Add(panel5);
             panel4.Controls.Add(panelBanner);
+            panel4.Controls.Add(panel14);
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
@@ -137,7 +139,7 @@
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label32.ForeColor = SystemColors.ButtonFace;
-            label32.Location = new Point(123, 24);
+            label32.Location = new Point(203, 25);
             label32.Name = "label32";
             label32.Size = new Size(117, 15);
             label32.TabIndex = 8;
@@ -148,7 +150,7 @@
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label31.ForeColor = SystemColors.ButtonFace;
-            label31.Location = new Point(153, 4);
+            label31.Location = new Point(233, 5);
             label31.Name = "label31";
             label31.Size = new Size(70, 15);
             label31.TabIndex = 7;
@@ -161,9 +163,9 @@
             panel5.Controls.Add(button6);
             panel5.Controls.Add(button5);
             panel5.Controls.Add(button4);
-            panel5.Location = new Point(260, 4);
+            panel5.Location = new Point(300, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(841, 43);
+            panel5.Size = new Size(801, 43);
             panel5.TabIndex = 6;
             // 
             // button8
@@ -173,7 +175,7 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(709, 5);
+            button8.Location = new Point(674, 4);
             button8.Name = "button8";
             button8.Size = new Size(112, 34);
             button8.TabIndex = 8;
@@ -188,7 +190,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(547, 6);
+            button7.Location = new Point(504, 4);
             button7.Name = "button7";
             button7.Size = new Size(112, 34);
             button7.TabIndex = 7;
@@ -203,7 +205,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(368, 6);
+            button6.Location = new Point(352, 3);
             button6.Name = "button6";
             button6.Size = new Size(112, 34);
             button6.TabIndex = 6;
@@ -218,7 +220,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(164, 5);
+            button5.Location = new Point(195, 2);
             button5.Name = "button5";
             button5.Size = new Size(142, 34);
             button5.TabIndex = 5;
@@ -233,7 +235,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(-3, 4);
+            button4.Location = new Point(68, 1);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 0;
@@ -312,6 +314,16 @@
             lblLimitedTime.Size = new Size(85, 15);
             lblLimitedTime.TabIndex = 0;
             lblLimitedTime.Text = "LIMITED TIME";
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.Transparent;
+            panel14.BackgroundImage = (Image)resources.GetObject("panel14.BackgroundImage");
+            panel14.BackgroundImageLayout = ImageLayout.Zoom;
+            panel14.Location = new Point(95, 1);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(58, 48);
+            panel14.TabIndex = 10;
             // 
             // panel10
             // 
@@ -550,6 +562,25 @@
             panel2.Size = new Size(251, 332);
             panel2.TabIndex = 13;
             // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label2.ForeColor = Color.DarkRed;
+            label2.Location = new Point(17, 233);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 23);
+            label2.TabIndex = 2;
+            label2.Text = "Rs. 3,300";
+            // 
+            // label5
+            // 
+            label5.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(3, 202);
+            label5.Name = "label5";
+            label5.Size = new Size(220, 40);
+            label5.TabIndex = 10;
+            label5.Text = "Ethernet Cable 6FT";
+            // 
             // panel12
             // 
             panel12.BackgroundImage = (Image)resources.GetObject("panel12.BackgroundImage");
@@ -574,16 +605,6 @@
             button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 
-            // label2
-            // 
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.ForeColor = Color.DarkRed;
-            label2.Location = new Point(17, 233);
-            label2.Name = "label2";
-            label2.Size = new Size(100, 23);
-            label2.TabIndex = 2;
-            label2.Text = "Rs. 3,300";
-            // 
             // panel3
             // 
             panel3.BackColor = Color.White;
@@ -596,6 +617,16 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(251, 332);
             panel3.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label3.ForeColor = Color.DarkRed;
+            label3.Location = new Point(17, 233);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 23);
+            label3.TabIndex = 2;
+            label3.Text = "Rs. 212,500";
             // 
             // label4
             // 
@@ -629,16 +660,6 @@
             button1.Text = "Add To Cart";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
-            // 
-            // label3
-            // 
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(17, 233);
-            label3.Name = "label3";
-            label3.Size = new Size(100, 23);
-            label3.TabIndex = 2;
-            label3.Text = "Rs. 212,500";
             // 
             // panel7
             // 
@@ -741,6 +762,7 @@
             label14.Size = new Size(220, 40);
             label14.TabIndex = 1;
             label14.Text = "Wireless Gaming Headset";
+            label14.Click += label14_Click;
             // 
             // flowProducts
             // 
@@ -768,6 +790,25 @@
             panel6.Size = new Size(251, 332);
             panel6.TabIndex = 14;
             // 
+            // label7
+            // 
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label7.ForeColor = Color.DarkRed;
+            label7.Location = new Point(17, 233);
+            label7.Name = "label7";
+            label7.Size = new Size(100, 23);
+            label7.TabIndex = 2;
+            label7.Text = "Rs. 4,500";
+            // 
+            // label8
+            // 
+            label8.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(3, 202);
+            label8.Name = "label8";
+            label8.Size = new Size(220, 40);
+            label8.TabIndex = 11;
+            label8.Text = "Razer Viper V4 Pro";
+            // 
             // panel13
             // 
             panel13.BackgroundImage = (Image)resources.GetObject("panel13.BackgroundImage");
@@ -790,43 +831,16 @@
             button10.TabIndex = 3;
             button10.Text = "Add To Cart";
             button10.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label7.ForeColor = Color.DarkRed;
-            label7.Location = new Point(17, 233);
-            label7.Name = "label7";
-            label7.Size = new Size(100, 23);
-            label7.TabIndex = 2;
-            label7.Text = "Rs. 4,500";
+            button10.Click += button10_Click_1;
             // 
             // panel9
             // 
             panel9.BackgroundImage = (Image)resources.GetObject("panel9.BackgroundImage");
             panel9.BackgroundImageLayout = ImageLayout.Zoom;
-            panel9.Location = new Point(263, 313);
+            panel9.Location = new Point(263, 317);
             panel9.Name = "panel9";
-            panel9.Size = new Size(250, 191);
+            panel9.Size = new Size(245, 187);
             panel9.TabIndex = 8;
-            // 
-            // label5
-            // 
-            label5.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 202);
-            label5.Name = "label5";
-            label5.Size = new Size(220, 40);
-            label5.TabIndex = 10;
-            label5.Text = "Ethernet Cable 6FT";
-            // 
-            // label8
-            // 
-            label8.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(3, 202);
-            label8.Name = "label8";
-            label8.Size = new Size(220, 40);
-            label8.TabIndex = 11;
-            label8.Text = "Razer Viper V4 Pro";
             // 
             // HomeForm
             // 
@@ -925,5 +939,6 @@
         private Label label9;
         private Label label5;
         private Label label8;
+        private Panel panel14;
     }
 }

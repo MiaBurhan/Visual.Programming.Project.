@@ -10,6 +10,7 @@ namespace Visual.Programming.Project.Grey
     public partial class Form3 : Form
     {
         private readonly string _productName;
+        internal Order CreatedOrder { get; private set; }
 
         public Form3() : this(string.Empty)
         {
@@ -20,7 +21,8 @@ namespace Visual.Programming.Project.Grey
         {
             InitializeComponent();
             _productName = productName ?? string.Empty;
-            lblLimitedTime.Text = string.IsNullOrWhiteSpace(_productName) ? "Buy Product" : "Buy Product: " + _productName;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            //lblLimitedTime.Text = string.IsNullOrWhiteSpace(_productName) ? "Buy Product" : "Buy Product: " + _productName;
         }
 
         private void deals_Load(object sender, EventArgs e)
@@ -82,7 +84,8 @@ namespace Visual.Programming.Project.Grey
             if (string.IsNullOrWhiteSpace(address))
             {
                 MessageBox.Show("Please enter your address.");
-                textBox4.Focus();
+                // address is stored in textBox3
+                textBox3.Focus();
                 return;
             }
 
@@ -93,6 +96,10 @@ namespace Visual.Programming.Project.Grey
                 return;
             }
 
+            // Persist the order via OrderManager so All Orders view updates
+            var created = OrderManager.AddOrder(_productName, name, 0m, email, null);
+            CreatedOrder = created;
+
             MessageBox.Show(
                 $"Product: {_productName}\n\n" +
                 $"Customer: {name}\n" +
@@ -102,6 +109,7 @@ namespace Visual.Programming.Project.Grey
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
 
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 

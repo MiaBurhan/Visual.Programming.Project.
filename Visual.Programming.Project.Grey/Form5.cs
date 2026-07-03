@@ -247,7 +247,8 @@ namespace Visual.Programming.Project.Grey
             cart.Show();
         }
 
-        private void lblTitle_Click(object sender, EventArgs e)
+
+        private void label28_Click(object sender, EventArgs e)
         {
             HomeForm f1 = new HomeForm();
             f1.Show();

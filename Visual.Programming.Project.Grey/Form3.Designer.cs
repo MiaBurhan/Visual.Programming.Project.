@@ -43,8 +43,8 @@
             btnShopNow = new Button();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
-            lblLimitedTime = new Label();
             panelBanner = new Panel();
+            label5 = new Label();
             panel3 = new Panel();
             panel1.SuspendLayout();
             panelBanner.SuspendLayout();
@@ -230,25 +230,11 @@
             textBox1.TabIndex = 12;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // lblLimitedTime
-            // 
-            lblLimitedTime.AutoSize = true;
-            lblLimitedTime.BackColor = Color.Transparent;
-            lblLimitedTime.Font = new Font("MS Reference Sans Serif", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLimitedTime.ForeColor = Color.White;
-            lblLimitedTime.Location = new Point(241, 24);
-            lblLimitedTime.Margin = new Padding(2, 0, 2, 0);
-            lblLimitedTime.Name = "lblLimitedTime";
-            lblLimitedTime.Size = new Size(236, 88);
-            lblLimitedTime.TabIndex = 0;
-            lblLimitedTime.Text = " Customer\r\nInformation";
-            lblLimitedTime.Click += lblLimitedTime_Click;
-            // 
             // panelBanner
             // 
             panelBanner.BackColor = Color.FromArgb(35, 47, 62);
+            panelBanner.Controls.Add(label5);
             panelBanner.Controls.Add(panel3);
-            panelBanner.Controls.Add(lblLimitedTime);
             panelBanner.Location = new Point(-3, -5);
             panelBanner.Margin = new Padding(2);
             panelBanner.Name = "panelBanner";
@@ -256,11 +242,24 @@
             panelBanner.TabIndex = 1;
             panelBanner.Paint += panelBanner_Paint;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Calibri", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(277, 23);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(204, 90);
+            label5.TabIndex = 25;
+            label5.Text = " Customer \r\nInformation";
+            // 
             // panel3
             // 
             panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.BackgroundImageLayout = ImageLayout.Zoom;
-            panel3.Location = new Point(-18, -10);
+            panel3.Location = new Point(-18, -6);
             panel3.Name = "panel3";
             panel3.Size = new Size(188, 145);
             panel3.TabIndex = 6;
@@ -292,7 +291,6 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private Button btnShopNow;
-        private Label lblLimitedTime;
         private Panel panelBanner;
         private TextBox textBox6;
         private TextBox textBox5;
@@ -303,5 +301,6 @@
         private Label label8;
         private Label label7;
         private Label label4;
+        private Label label5;
     }
 }

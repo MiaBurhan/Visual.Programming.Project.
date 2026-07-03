@@ -60,11 +60,33 @@ namespace Visual.Programming.Project.Grey
 
         private void Card_BuyAgainClicked(object sender, string productName)
         {
-            // Add order to history
-            OrderManager.AddOrder(productName, "Repeat Customer", 0m, "");
+            // Open checkout form for the selected product so user can confirm / edit details
+            using var checkout = new Form3(productName);
+            var result = checkout.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                // Form3 itself adds the order to OrderManager; just show confirmation and refresh UI
+                MessageBox.Show($"{productName}\n\nYou bought this product successfully!",
+                    "Order Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            MessageBox.Show($"{productName}\n\nYou bought this product again successfully!",
-                "Order Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                YourOrder_Load(this, EventArgs.Empty);
+            }
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            // subscribe to order events so the orders list refreshes when orders are added elsewhere
+            OrderManager.OrderAdded += OrderManager_OrderAdded;
+        }
+
+        private void OrderManager_OrderAdded(Order order)
+        {
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new Action(() => YourOrder_Load(this, EventArgs.Empty)));
+                return;
+            }
 
             YourOrder_Load(this, EventArgs.Empty);
         }
@@ -85,6 +107,16 @@ namespace Visual.Programming.Project.Grey
         {
             AllProducts dealsForm = new AllProducts();
             dealsForm.Show();
+        }
+
+        private void flowPanelOrders_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

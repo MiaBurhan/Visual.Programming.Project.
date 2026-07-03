@@ -331,25 +331,25 @@ namespace Visual.Programming.Project.Grey
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Form3 cart = new Form3();
+            Form3 cart = new Form3(label14.Text);
             cart.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 cart = new Form3();
+            Form3 cart = new Form3(label9.Text);
             cart.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form3 cart = new Form3();
+            Form3 cart = new Form3(label4.Text);
             cart.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form3 cart = new Form3();
+            Form3 cart = new Form3(label5.Text);
             cart.Show();
         }
 
@@ -381,6 +381,17 @@ namespace Visual.Programming.Project.Grey
 
         private void label8_Click(object sender, EventArgs e)
         {
-                    }
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3(label8.Text);
+            cart.Show();
+        }
     }
 }

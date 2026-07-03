@@ -22,11 +22,13 @@ namespace Visual.Programming.Project.Grey
             form.ForeColor = Color.Black;
             form.Font = BodyFont;
             form.StartPosition = FormStartPosition.CenterScreen;
-            // Apply icon from resources if available
+            // Apply icon from resources if available (optional)
+            // Note: the project Resources may not include an image at design time.
+            // Avoid referencing a generated resource directly to prevent build errors when missing.
             try
             {
-                var bmp = Properties.Resources.batman;
-                if (bmp != null)
+                var res = Properties.Resources.ResourceManager.GetObject("logo");
+                if (res is System.Drawing.Bitmap bmp)
                 {
                     form.Icon = System.Drawing.Icon.FromHandle(bmp.GetHicon());
                 }

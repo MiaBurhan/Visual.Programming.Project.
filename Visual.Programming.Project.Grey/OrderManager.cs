@@ -8,6 +8,8 @@ namespace Visual.Programming.Project.Grey
     {
         // In-memory order history. For production, replace with persistent storage.
         public static readonly List<Order> Orders = new();
+        // Event raised when a new order is added so UI can refresh
+        internal static event Action<Order> OrderAdded;
 
         // Add an order and return it
         public static Order AddOrder(string productName, string customerName, decimal price = 0m, string email = "", string imagePath = null)
@@ -24,6 +26,8 @@ namespace Visual.Programming.Project.Grey
             };
             // insert newest order at the beginning so it appears at the top in order views
             Orders.Insert(0, order);
+            // notify listeners that a new order was added
+            try { OrderAdded?.Invoke(order); } catch { }
             // Persist to Excel (best-effort)
             try
             {
