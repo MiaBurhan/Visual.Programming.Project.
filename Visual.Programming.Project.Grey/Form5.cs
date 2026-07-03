@@ -180,5 +180,78 @@ namespace Visual.Programming.Project.Grey
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Form3 cart = new Form3();
+            cart.Show();
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+            HomeForm f1 = new HomeForm();
+            f1.Show();
+            this.Hide();
+        }
     }
 }

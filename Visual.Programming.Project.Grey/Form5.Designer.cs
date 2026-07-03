@@ -54,52 +54,46 @@
             pictureBox7 = new PictureBox();
             label6 = new Label();
             panel4 = new Panel();
-            button3 = new Button();
             label7 = new Label();
             label8 = new Label();
+            button8 = new Button();
             pictureBox4 = new PictureBox();
             panel5 = new Panel();
-            button4 = new Button();
+            button3 = new Button();
             label9 = new Label();
             label10 = new Label();
             pictureBox5 = new PictureBox();
             panel6 = new Panel();
-            button5 = new Button();
+            button4 = new Button();
             label11 = new Label();
             label12 = new Label();
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
-            button8 = new Button();
             label17 = new Label();
+            button5 = new Button();
             label18 = new Label();
             pictureBox8 = new PictureBox();
             label19 = new Label();
             panel9 = new Panel();
-            button9 = new Button();
+            button20 = new Button();
             label20 = new Label();
             label21 = new Label();
             pictureBox9 = new PictureBox();
             panel10 = new Panel();
-            button10 = new Button();
+            button9 = new Button();
             label22 = new Label();
             label23 = new Label();
             pictureBox10 = new PictureBox();
             panel11 = new Panel();
-            button11 = new Button();
+            button18 = new Button();
             label24 = new Label();
             label25 = new Label();
             pictureBox11 = new PictureBox();
             panel12 = new Panel();
-            button12 = new Button();
+            button19 = new Button();
             label26 = new Label();
             label27 = new Label();
             pictureBox12 = new PictureBox();
-            panel13 = new Panel();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button16 = new Button();
-            button17 = new Button();
             panelHeader.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -125,18 +119,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panelHeader
             // 
             panelHeader.BackColor = Color.FromArgb(35, 47, 62);
-            panelHeader.Controls.Add(panel13);
             panelHeader.Controls.Add(lblTitle);
             panelHeader.Dock = DockStyle.Top;
             panelHeader.Location = new Point(0, 0);
             panelHeader.Name = "panelHeader";
-            panelHeader.Size = new Size(1151, 54);
+            panelHeader.Size = new Size(1602, 64);
             panelHeader.TabIndex = 2;
             panelHeader.Paint += panelHeader_Paint;
             // 
@@ -150,6 +142,7 @@
             lblTitle.Size = new Size(109, 30);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "ShopHub";
+            lblTitle.Click += lblTitle_Click;
             // 
             // panel2
             // 
@@ -166,14 +159,18 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Gold;
+            button1.BackColor = Color.FromArgb(255, 153, 0);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(17, 276);
             button1.Name = "button1";
             button1.Size = new Size(220, 35);
-            button1.TabIndex = 3;
+            button1.TabIndex = 9;
             button1.Text = "Add To Cart";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += button1_Click_1;
             // 
             // label1
             // 
@@ -231,14 +228,18 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Gold;
+            button2.BackColor = Color.FromArgb(255, 153, 0);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
             button2.Location = new Point(17, 276);
             button2.Name = "button2";
             button2.Size = new Size(220, 35);
-            button2.TabIndex = 3;
+            button2.TabIndex = 10;
             button2.Text = "Add To Cart";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            button2.Click += button2_Click_1;
             // 
             // label3
             // 
@@ -284,14 +285,18 @@
             // 
             // button6
             // 
-            button6.BackColor = Color.Gold;
+            button6.BackColor = Color.FromArgb(255, 153, 0);
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
             button6.Location = new Point(17, 276);
             button6.Name = "button6";
             button6.Size = new Size(220, 35);
-            button6.TabIndex = 3;
+            button6.TabIndex = 11;
             button6.Text = "Add To Cart";
             button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            button6.Click += button6_Click_1;
             // 
             // label13
             // 
@@ -338,14 +343,17 @@
             // 
             // button7
             // 
-            button7.BackColor = Color.Gold;
-            button7.Location = new Point(17, 276);
+            button7.BackColor = Color.FromArgb(255, 153, 0);
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(12, 276);
             button7.Name = "button7";
             button7.Size = new Size(220, 35);
-            button7.TabIndex = 3;
+            button7.TabIndex = 8;
             button7.Text = "Add To Cart";
             button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
             // 
             // label15
             // 
@@ -391,25 +399,14 @@
             // 
             panel4.BackColor = Color.White;
             panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(button3);
             panel4.Controls.Add(label7);
             panel4.Controls.Add(label8);
+            panel4.Controls.Add(button8);
             panel4.Controls.Add(pictureBox4);
             panel4.Location = new Point(20, 561);
             panel4.Name = "panel4";
             panel4.Size = new Size(251, 332);
             panel4.TabIndex = 7;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Gold;
-            button3.Location = new Point(17, 276);
-            button3.Name = "button3";
-            button3.Size = new Size(220, 35);
-            button3.TabIndex = 3;
-            button3.Text = "Add To Cart";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // label7
             // 
@@ -430,6 +427,21 @@
             label8.TabIndex = 1;
             label8.Text = "Arssm Men";
             // 
+            // button8
+            // 
+            button8.BackColor = Color.FromArgb(255, 153, 0);
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(15, 276);
+            button8.Name = "button8";
+            button8.Size = new Size(220, 35);
+            button8.TabIndex = 15;
+            button8.Text = "Add To Cart";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click_1;
+            // 
             // pictureBox4
             // 
             pictureBox4.BackColor = Color.LightGray;
@@ -445,7 +457,7 @@
             // 
             panel5.BackColor = Color.White;
             panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Controls.Add(button4);
+            panel5.Controls.Add(button3);
             panel5.Controls.Add(label9);
             panel5.Controls.Add(label10);
             panel5.Controls.Add(pictureBox5);
@@ -454,16 +466,20 @@
             panel5.Size = new Size(251, 332);
             panel5.TabIndex = 8;
             // 
-            // button4
+            // button3
             // 
-            button4.BackColor = Color.Gold;
-            button4.Location = new Point(17, 276);
-            button4.Name = "button4";
-            button4.Size = new Size(220, 35);
-            button4.TabIndex = 3;
-            button4.Text = "Add To Cart";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button3.BackColor = Color.FromArgb(255, 153, 0);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(17, 276);
+            button3.Name = "button3";
+            button3.Size = new Size(220, 35);
+            button3.TabIndex = 12;
+            button3.Text = "Add To Cart";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click_1;
             // 
             // label9
             // 
@@ -499,7 +515,7 @@
             // 
             panel6.BackColor = Color.White;
             panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Controls.Add(button5);
+            panel6.Controls.Add(button4);
             panel6.Controls.Add(label11);
             panel6.Controls.Add(label12);
             panel6.Controls.Add(pictureBox6);
@@ -508,16 +524,20 @@
             panel6.Size = new Size(251, 332);
             panel6.TabIndex = 8;
             // 
-            // button5
+            // button4
             // 
-            button5.BackColor = Color.Gold;
-            button5.Location = new Point(17, 276);
-            button5.Name = "button5";
-            button5.Size = new Size(220, 35);
-            button5.TabIndex = 3;
-            button5.Text = "Add To Cart";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            button4.BackColor = Color.FromArgb(255, 153, 0);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(17, 276);
+            button4.Name = "button4";
+            button4.Size = new Size(220, 35);
+            button4.TabIndex = 13;
+            button4.Text = "Add To Cart";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click_1;
             // 
             // label11
             // 
@@ -553,25 +573,14 @@
             // 
             panel8.BackColor = Color.White;
             panel8.BorderStyle = BorderStyle.FixedSingle;
-            panel8.Controls.Add(button8);
             panel8.Controls.Add(label17);
+            panel8.Controls.Add(button5);
             panel8.Controls.Add(label18);
             panel8.Controls.Add(pictureBox8);
             panel8.Location = new Point(866, 561);
             panel8.Name = "panel8";
             panel8.Size = new Size(251, 332);
             panel8.TabIndex = 8;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.Gold;
-            button8.Location = new Point(17, 276);
-            button8.Name = "button8";
-            button8.Size = new Size(220, 35);
-            button8.TabIndex = 3;
-            button8.Text = "Add To Cart";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
             // 
             // label17
             // 
@@ -582,6 +591,21 @@
             label17.Size = new Size(100, 23);
             label17.TabIndex = 2;
             label17.Text = "Rs. 2,500";
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(255, 153, 0);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(17, 276);
+            button5.Name = "button5";
+            button5.Size = new Size(220, 35);
+            button5.TabIndex = 14;
+            button5.Text = "Add To Cart";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click_1;
             // 
             // label18
             // 
@@ -617,7 +641,7 @@
             // 
             panel9.BackColor = Color.White;
             panel9.BorderStyle = BorderStyle.FixedSingle;
-            panel9.Controls.Add(button9);
+            panel9.Controls.Add(button20);
             panel9.Controls.Add(label20);
             panel9.Controls.Add(label21);
             panel9.Controls.Add(pictureBox9);
@@ -626,16 +650,20 @@
             panel9.Size = new Size(251, 332);
             panel9.TabIndex = 8;
             // 
-            // button9
+            // button20
             // 
-            button9.BackColor = Color.Gold;
-            button9.Location = new Point(17, 276);
-            button9.Name = "button9";
-            button9.Size = new Size(220, 35);
-            button9.TabIndex = 3;
-            button9.Text = "Add To Cart";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            button20.BackColor = Color.FromArgb(255, 153, 0);
+            button20.FlatAppearance.BorderSize = 0;
+            button20.FlatStyle = FlatStyle.Flat;
+            button20.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button20.ForeColor = Color.White;
+            button20.Location = new Point(16, 275);
+            button20.Name = "button20";
+            button20.Size = new Size(220, 35);
+            button20.TabIndex = 15;
+            button20.Text = "Add To Cart";
+            button20.UseVisualStyleBackColor = false;
+            button20.Click += button20_Click;
             // 
             // label20
             // 
@@ -671,7 +699,7 @@
             // 
             panel10.BackColor = Color.White;
             panel10.BorderStyle = BorderStyle.FixedSingle;
-            panel10.Controls.Add(button10);
+            panel10.Controls.Add(button9);
             panel10.Controls.Add(label22);
             panel10.Controls.Add(label23);
             panel10.Controls.Add(pictureBox10);
@@ -680,16 +708,20 @@
             panel10.Size = new Size(251, 332);
             panel10.TabIndex = 9;
             // 
-            // button10
+            // button9
             // 
-            button10.BackColor = Color.Gold;
-            button10.Location = new Point(17, 276);
-            button10.Name = "button10";
-            button10.Size = new Size(220, 35);
-            button10.TabIndex = 3;
-            button10.Text = "Add To Cart";
-            button10.UseVisualStyleBackColor = false;
-            button10.Click += button10_Click;
+            button9.BackColor = Color.FromArgb(255, 153, 0);
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button9.ForeColor = Color.White;
+            button9.Location = new Point(17, 275);
+            button9.Name = "button9";
+            button9.Size = new Size(220, 35);
+            button9.TabIndex = 12;
+            button9.Text = "Add To Cart";
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click_1;
             // 
             // label22
             // 
@@ -725,7 +757,7 @@
             // 
             panel11.BackColor = Color.White;
             panel11.BorderStyle = BorderStyle.FixedSingle;
-            panel11.Controls.Add(button11);
+            panel11.Controls.Add(button18);
             panel11.Controls.Add(label24);
             panel11.Controls.Add(label25);
             panel11.Controls.Add(pictureBox11);
@@ -734,16 +766,20 @@
             panel11.Size = new Size(251, 332);
             panel11.TabIndex = 9;
             // 
-            // button11
+            // button18
             // 
-            button11.BackColor = Color.Gold;
-            button11.Location = new Point(17, 276);
-            button11.Name = "button11";
-            button11.Size = new Size(220, 35);
-            button11.TabIndex = 3;
-            button11.Text = "Add To Cart";
-            button11.UseVisualStyleBackColor = false;
-            button11.Click += button11_Click;
+            button18.BackColor = Color.FromArgb(255, 153, 0);
+            button18.FlatAppearance.BorderSize = 0;
+            button18.FlatStyle = FlatStyle.Flat;
+            button18.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button18.ForeColor = Color.White;
+            button18.Location = new Point(17, 275);
+            button18.Name = "button18";
+            button18.Size = new Size(220, 35);
+            button18.TabIndex = 13;
+            button18.Text = "Add To Cart";
+            button18.UseVisualStyleBackColor = false;
+            button18.Click += button18_Click;
             // 
             // label24
             // 
@@ -779,7 +815,7 @@
             // 
             panel12.BackColor = Color.White;
             panel12.BorderStyle = BorderStyle.FixedSingle;
-            panel12.Controls.Add(button12);
+            panel12.Controls.Add(button19);
             panel12.Controls.Add(label26);
             panel12.Controls.Add(label27);
             panel12.Controls.Add(pictureBox12);
@@ -788,16 +824,20 @@
             panel12.Size = new Size(251, 332);
             panel12.TabIndex = 9;
             // 
-            // button12
+            // button19
             // 
-            button12.BackColor = Color.Gold;
-            button12.Location = new Point(17, 276);
-            button12.Name = "button12";
-            button12.Size = new Size(220, 35);
-            button12.TabIndex = 3;
-            button12.Text = "Add To Cart";
-            button12.UseVisualStyleBackColor = false;
-            button12.Click += button12_Click;
+            button19.BackColor = Color.FromArgb(255, 153, 0);
+            button19.FlatAppearance.BorderSize = 0;
+            button19.FlatStyle = FlatStyle.Flat;
+            button19.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button19.ForeColor = Color.White;
+            button19.Location = new Point(17, 275);
+            button19.Name = "button19";
+            button19.Size = new Size(220, 35);
+            button19.TabIndex = 14;
+            button19.Text = "Add To Cart";
+            button19.UseVisualStyleBackColor = false;
+            button19.Click += button19_Click;
             // 
             // label26
             // 
@@ -829,96 +869,13 @@
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
             // 
-            // panel13
-            // 
-            panel13.Controls.Add(button13);
-            panel13.Controls.Add(button14);
-            panel13.Controls.Add(button15);
-            panel13.Controls.Add(button16);
-            panel13.Controls.Add(button17);
-            panel13.Location = new Point(220, 26);
-            panel13.Margin = new Padding(4);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(1202, 63);
-            panel13.TabIndex = 6;
-            // 
-            // button13
-            // 
-            button13.BackColor = Color.FromArgb(35, 47, 62);
-            button13.FlatStyle = FlatStyle.Flat;
-            button13.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button13.ForeColor = Color.White;
-            button13.Location = new Point(1038, 4);
-            button13.Margin = new Padding(4);
-            button13.Name = "button13";
-            button13.Size = new Size(160, 50);
-            button13.TabIndex = 8;
-            button13.Text = "Acount";
-            button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            button14.BackColor = Color.FromArgb(35, 47, 62);
-            button14.FlatStyle = FlatStyle.Flat;
-            button14.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button14.ForeColor = Color.White;
-            button14.Location = new Point(781, 4);
-            button14.Margin = new Padding(4);
-            button14.Name = "button14";
-            button14.Size = new Size(160, 50);
-            button14.TabIndex = 7;
-            button14.Text = "All Products";
-            button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            button15.BackColor = Color.FromArgb(35, 47, 62);
-            button15.FlatStyle = FlatStyle.Flat;
-            button15.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button15.ForeColor = Color.White;
-            button15.Location = new Point(526, 13);
-            button15.Margin = new Padding(4);
-            button15.Name = "button15";
-            button15.Size = new Size(160, 50);
-            button15.TabIndex = 6;
-            button15.Text = "Cart ";
-            button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            button16.BackColor = Color.FromArgb(35, 47, 62);
-            button16.FlatStyle = FlatStyle.Flat;
-            button16.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button16.ForeColor = Color.White;
-            button16.Location = new Point(235, 13);
-            button16.Margin = new Padding(4);
-            button16.Name = "button16";
-            button16.Size = new Size(203, 50);
-            button16.TabIndex = 5;
-            button16.Text = "Your order ";
-            button16.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            button17.BackColor = Color.FromArgb(35, 47, 62);
-            button17.FlatStyle = FlatStyle.Flat;
-            button17.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button17.ForeColor = Color.White;
-            button17.Location = new Point(-4, 13);
-            button17.Margin = new Padding(4);
-            button17.Name = "button17";
-            button17.Size = new Size(160, 50);
-            button17.TabIndex = 0;
-            button17.Text = "Home";
-            button17.UseVisualStyleBackColor = false;
-            // 
             // AllProducts
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1168, 714);
+            ClientSize = new Size(1619, 714);
             Controls.Add(panel12);
             Controls.Add(panel11);
             Controls.Add(panel10);
@@ -965,7 +922,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            panel13.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -975,73 +931,67 @@
         private Panel panelHeader;
         private Label lblTitle;
         private Panel panel2;
-        private Button button1;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
         private Label label5;
         private Panel panel3;
-        private Button button2;
         private Label label3;
         private Label label4;
         private PictureBox pictureBox3;
         private Panel panel1;
-        private Button button6;
         private Label label13;
         private Label label14;
         private PictureBox pictureBox1;
         private Panel panel7;
-        private Button button7;
         private Label label15;
         private Label label16;
         private PictureBox pictureBox7;
         private Label label6;
         private Panel panel4;
-        private Button button3;
         private Label label7;
         private Label label8;
         private PictureBox pictureBox4;
         private Panel panel5;
-        private Button button4;
         private Label label9;
         private Label label10;
         private PictureBox pictureBox5;
         private Panel panel6;
-        private Button button5;
         private Label label11;
         private Label label12;
         private PictureBox pictureBox6;
         private Panel panel8;
-        private Button button8;
         private Label label17;
         private Label label18;
         private PictureBox pictureBox8;
         private Label label19;
         private Panel panel9;
-        private Button button9;
         private Label label20;
         private Label label21;
         private PictureBox pictureBox9;
         private Panel panel10;
-        private Button button10;
         private Label label22;
         private Label label23;
         private PictureBox pictureBox10;
         private Panel panel11;
-        private Button button11;
         private Label label24;
         private Label label25;
         private PictureBox pictureBox11;
         private Panel panel12;
-        private Button button12;
         private Label label26;
         private Label label27;
         private PictureBox pictureBox12;
-        private Panel panel13;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button16;
-        private Button button17;
+        private Button button7;
+        private Button button1;
+        private Button button2;
+        private Button button6;
+        private Button button8;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button9;
+        private Button button18;
+        private Button button19;
+        private Button button20;
     }
 }

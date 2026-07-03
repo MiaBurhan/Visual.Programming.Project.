@@ -68,18 +68,20 @@
             // textBox1
             // 
             textBox1.BackColor = Color.White;
+            textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.FromArgb(35, 47, 62);
             textBox1.Location = new Point(203, 167);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(335, 25);
+            textBox1.Size = new Size(335, 27);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
+            textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.FromArgb(35, 47, 62);
             textBox2.Location = new Point(203, 246);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(335, 25);
+            textBox2.Size = new Size(335, 27);
             textBox2.TabIndex = 4;
             // 
             // label2
@@ -95,10 +97,11 @@
             // 
             // textBox3
             // 
+            textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox3.ForeColor = Color.FromArgb(35, 47, 62);
             textBox3.Location = new Point(203, 328);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(335, 25);
+            textBox3.Size = new Size(335, 27);
             textBox3.TabIndex = 6;
             textBox3.TextChanged += textBox3_TextChanged;
             // 

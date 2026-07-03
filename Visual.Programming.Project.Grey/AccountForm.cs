@@ -18,33 +18,33 @@ namespace Visual.Programming.Project.Grey
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             // Create inline validation labels placed under existing text boxes
-            errorLabel1 = CreateErrorLabel();
-            errorLabel2 = CreateErrorLabel();
-            errorLabel3 = CreateErrorLabel();
+            ////errorLabel1 = CreateErrorLabel();
+            ////errorLabel2 = CreateErrorLabel();
+            ////errorLabel3 = CreateErrorLabel();
 
-            // position labels if textboxes exist
-            if (this.Controls.ContainsKey("textBox1"))
-            {
-                var tb = this.Controls["textBox1"] as TextBox;
-                PlaceLabelUnderControl(tb, errorLabel1);
-            }
-            if (this.Controls.ContainsKey("textBox2"))
-            {
-                var tb = this.Controls["textBox2"] as TextBox;
-                PlaceLabelUnderControl(tb, errorLabel2);
-            }
-            if (this.Controls.ContainsKey("textBox3"))
-            {
-                var tb = this.Controls["textBox3"] as TextBox;
-                PlaceLabelUnderControl(tb, errorLabel3);
-            }
+            //// position labels if textboxes exist
+            //if (this.Controls.ContainsKey("textBox1"))
+            //{
+            //    var tb = this.Controls["textBox1"] as TextBox;
+            //    PlaceLabelUnderControl(tb, errorLabel1);
+            //}
+            //if (this.Controls.ContainsKey("textBox2"))
+            //{
+            //    var tb = this.Controls["textBox2"] as TextBox;
+            //    PlaceLabelUnderControl(tb, errorLabel2);
+            //}
+            //if (this.Controls.ContainsKey("textBox3"))
+            //{
+            //    var tb = this.Controls["textBox3"] as TextBox;
+            //    PlaceLabelUnderControl(tb, errorLabel3);
+            //}
 
-            // wire submit/save if button1 exists
-            if (this.Controls.ContainsKey("button1"))
-            {
-                var b = this.Controls["button1"] as Button;
-                b.Click += Button1_Click;
-            }
+            //// wire submit/save if button1 exists
+            //if (this.Controls.ContainsKey("button1"))
+            //{
+            //    var b = this.Controls["button1"] as Button;
+            //    b.Click += Button1_Click;
+            //}
         }
 
         private void AccountForm_Load(object sender, EventArgs e)
@@ -77,17 +77,17 @@ namespace Visual.Programming.Project.Grey
         
     }
 
-        private Label CreateErrorLabel()
-        {
-            return new Label
-            {
-                AutoSize = true,
-                ForeColor = Color.DarkRed,
-                Visible = false,
-                Text = "Enter data or fill the box",
-                Font = new Font(Font.FontFamily, 8f)
-            };
-        }
+        //private Label CreateErrorLabel()
+        //{
+        //    return new Label
+        //    {
+        //        AutoSize = true,
+        //        ForeColor = Color.DarkRed,
+        //        Visible = false,
+        //        Text = "Enter data or fill the box",
+        //        Font = new Font(Font.FontFamily, 8f)
+        //    };
+        //}
 
         private void PlaceLabelUnderControl(Control ctrl, Label label)
         {

@@ -198,17 +198,17 @@ namespace Visual.Programming.Project.Grey
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+
         }
 
         private void picProduct1_Click(object sender, EventArgs e)
         {
-            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+
         }
 
         private void label53_Click(object sender, EventArgs e)
@@ -353,10 +353,6 @@ namespace Visual.Programming.Project.Grey
             cart.Show();
         }
 
-        private void panelBanner_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void flowProducts_Paint(object sender, PaintEventArgs e)
         {
@@ -367,5 +363,24 @@ namespace Visual.Programming.Project.Grey
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }
