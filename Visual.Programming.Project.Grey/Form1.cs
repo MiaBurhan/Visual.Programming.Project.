@@ -27,6 +27,8 @@ namespace Visual.Programming.Project.Grey
         {
             this.WindowState = FormWindowState.Maximized;
 
+            timer1.Interval = 20;
+            timer1.Start();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -392,6 +394,24 @@ namespace Visual.Programming.Project.Grey
         {
             Form3 cart = new Form3(label8.Text);
             cart.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int speed = 6;
+
+            lblPerks.Left -= speed;
+            lblSubtitle.Left -= speed;
+
+            if (lblPerks.Right <= 0)
+                lblPerks.Left = panelBanner.Width;
+
+            if (lblSubtitle.Right <= 0)
+                lblSubtitle.Left = panelBanner.Width;
+        }
+
+        private void lblPerks_Click_1(object sender, EventArgs e)
+        {
         }
     }
 }
