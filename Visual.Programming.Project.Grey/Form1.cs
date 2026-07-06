@@ -11,8 +11,7 @@ namespace Visual.Programming.Project.Grey
         {
             InitializeComponent();
             Theme.ApplyFormStyle(this);
-            //UIHelper.ApplyButtonStyles(this);
-            //panelBanner.Location = new Point(0, 0);
+
             panelBanner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             flowProducts.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         }
