@@ -11,7 +11,7 @@ namespace Visual.Programming.Project.Grey
 {
     public partial class AccountForm : Form
     {
-        
+       
         SqlConnection con = DatabaseConnection.GetConnection();
         private Label errorLabel1;
         private Label errorLabel2;
@@ -165,6 +165,7 @@ namespace Visual.Programming.Project.Grey
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+
             try
             {
                 con.Open();
@@ -189,7 +190,7 @@ namespace Visual.Programming.Project.Grey
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.ToString());
             }
             finally
             {
