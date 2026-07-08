@@ -55,13 +55,11 @@
             panel12 = new Panel();
             button9 = new Button();
             panel3 = new Panel();
-            label3 = new Label();
             label4 = new Label();
             panel11 = new Panel();
             button1 = new Button();
             panel7 = new Panel();
             panel9 = new Panel();
-            label15 = new Label();
             label9 = new Label();
             button2 = new Button();
             panel1 = new Panel();
@@ -94,6 +92,8 @@
             label32 = new Label();
             panel4 = new Panel();
             label6 = new Label();
+            label10 = new Label();
+            label3 = new Label();
             panel10.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -424,17 +424,6 @@
             panel3.Size = new Size(358, 487);
             panel3.TabIndex = 16;
             // 
-            // label3
-            // 
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(24, 343);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(143, 34);
-            label3.TabIndex = 2;
-            label3.Text = "Rs. 212,500";
-            // 
             // label4
             // 
             label4.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -475,8 +464,8 @@
             // 
             panel7.BackColor = Color.White;
             panel7.BorderStyle = BorderStyle.FixedSingle;
+            panel7.Controls.Add(label10);
             panel7.Controls.Add(panel9);
-            panel7.Controls.Add(label15);
             panel7.Controls.Add(label9);
             panel7.Controls.Add(button2);
             panel7.Location = new Point(370, 4);
@@ -494,17 +483,6 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(350, 275);
             panel9.TabIndex = 8;
-            // 
-            // label15
-            // 
-            label15.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label15.ForeColor = Color.DarkRed;
-            label15.Location = new Point(24, 343);
-            label15.Margin = new Padding(4, 0, 4, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(143, 34);
-            label15.TabIndex = 2;
-            label15.Text = "Rs. 417,034";
             // 
             // label9
             // 
@@ -912,6 +890,28 @@
             label6.TabIndex = 11;
             label6.Text = "ShopHub";
             // 
+            // label10
+            // 
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label10.ForeColor = Color.DarkRed;
+            label10.Location = new Point(24, 344);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(143, 34);
+            label10.TabIndex = 3;
+            label10.Text = "Rs. 500,00";
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label3.ForeColor = Color.DarkRed;
+            label3.Location = new Point(20, 344);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(143, 34);
+            label3.TabIndex = 10;
+            label3.Text = "Rs. 200,00";
+            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -971,9 +971,7 @@
         private Label label2;
         private Panel panel3;
         private Button button1;
-        private Label label3;
         private Panel panel7;
-        private Label label15;
         private Panel panel1;
         private Button button3;
         private Label label13;
@@ -1011,5 +1009,7 @@
         private Label label32;
         private Panel panel4;
         private Label label6;
+        private Label label3;
+        private Label label10;
     }
 }

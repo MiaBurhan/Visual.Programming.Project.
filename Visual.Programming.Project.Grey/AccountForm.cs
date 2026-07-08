@@ -5,11 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Data;
+using Microsoft.Data.SqlClient;
 namespace Visual.Programming.Project.Grey
 {
     public partial class AccountForm : Form
     {
+        
+        SqlConnection con = DatabaseConnection.GetConnection();
         private Label errorLabel1;
         private Label errorLabel2;
         private Label errorLabel3;
@@ -65,17 +68,17 @@ namespace Visual.Programming.Project.Grey
 
         private void button2_Click(object sender, EventArgs e)
         {
-        
+
             if (textBox3.PasswordChar == '*')
             {
-                textBox3.PasswordChar = '\0'; 
+                textBox3.PasswordChar = '\0';
             }
             else
             {
-                textBox3.PasswordChar = '*'; 
+                textBox3.PasswordChar = '*';
             }
-        
-    }
+
+        }
 
         //private Label CreateErrorLabel()
         //{
@@ -157,6 +160,41 @@ namespace Visual.Programming.Project.Grey
             catch (Exception ex)
             {
                 MessageBox.Show("Unable to save account: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+
+                string query = "INSERT INTO user_Table (user_Name, user_email, user_Pass) VALUES (@name, @email, @pass)";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                cmd.Parameters.AddWithValue("@name", textBox1.Text);
+                cmd.Parameters.AddWithValue("@email", textBox2.Text);
+                cmd.Parameters.AddWithValue("@pass", textBox3.Text);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("User saved successfully in database.");
+
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
             }
         }
     }
