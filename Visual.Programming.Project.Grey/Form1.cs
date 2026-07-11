@@ -15,297 +15,37 @@ namespace Visual.Programming.Project.Grey
             panelBanner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             flowProducts.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         }
-
-
-        private void label1_Click(object sender, EventArgs e)
+        public HomeForm(string username)
         {
-
+            InitializeComponent();
+            Theme.ApplyFormStyle(this);
+            label11.Text = username;
+            panelBanner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            flowProducts.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             this.WindowState = FormWindowState.Maximized;
+
+            // Start at top
+            this.AutoScrollPosition = new Point(0, 0);
+            flowProducts.AutoScrollPosition = new Point(0, 0);
 
             timer1.Interval = 20;
             timer1.Start();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblBackToTop_Click(object sender, EventArgs e)
-        {
-            // Scroll the main products flow panel to top
-            flowProducts.AutoScrollPosition = new Point(0, 0);
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelFooter_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                AccountForm accountForm = new AccountForm();
-                accountForm.Show();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening account form: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                AllProducts dealsForm = new AllProducts();
-                dealsForm.Show();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                AllProducts frm = new AllProducts();
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnAddToCart1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (sender is Button clickedButton)
-                {
-                    string productName = clickedButton.Tag?.ToString() ?? "Product";
-                    Form3 cartForm = new Form3(productName);
-                    cartForm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (sender is Button clickedButton)
-                {
-                    string productName = clickedButton.Tag?.ToString() ?? "Product";
-                    Form3 cartForm = new Form3(productName);
-                    cartForm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (sender is Button clickedButton)
-                {
-                    string productName = clickedButton.Tag?.ToString() ?? "Product";
-                    Form3 cartForm = new Form3(productName);
-                    cartForm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Form4 yourOrderForm = new Form4();
-                yourOrderForm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening orders: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void lblCategory1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnShopNow_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                AllProducts frm = new AllProducts();
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error opening products: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void lblPerks_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picProduct1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label53_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (sender is Button clickedButton)
-                {
-                    string productName = clickedButton.Tag?.ToString() ?? "Product";
-                    Form3 cartForm = new Form3(productName);
-                    cartForm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (sender is Button clickedButton)
-                {
-                    string productName = clickedButton.Tag?.ToString() ?? "Product";
-                    Form3 cartForm = new Form3(productName);
-                    cartForm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (sender is Button clickedButton)
-                {
-                    string productName = clickedButton.Tag?.ToString() ?? "Product";
-                    Form3 cartForm = new Form3(productName);
-                    cartForm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error adding to cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void panelBackToTop_Paint(object sender, PaintEventArgs e)
-        {
-
-
-            this.AutoScrollPosition = new Point(0, 0);
-
-        }
-
-        private void label52_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelBanner_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ShopHub_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button8_Click_2(object sender, EventArgs e)
         {
             AccountForm af = new AccountForm();
@@ -326,63 +66,91 @@ namespace Visual.Programming.Project.Grey
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            Form3 cart = new Form3();
-            cart.Show();
+            if (Session.IsLoggedIn)
+            {
+                MessageBox.Show("No product selected.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                Form3 cart = new Form3();
+                cart.Show();
+            }
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Form3 cart = new Form3(label14.Text);
-            cart.Show();
+            if (Session.IsLoggedIn)
+            {
+                OrderManager.AddOrder(label14.Text, Session.Username, 0m, string.Empty, null);
+                MessageBox.Show($"{label14.Text} added to Your Orders.", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                Form3 cart = new Form3(label14.Text);
+                cart.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 cart = new Form3(label9.Text);
-            cart.Show();
+            if (Session.IsLoggedIn)
+            {
+                OrderManager.AddOrder(label9.Text, Session.Username, 0m, string.Empty, null);
+                MessageBox.Show($"{label9.Text} added to Your Orders.", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                Form3 cart = new Form3(label9.Text);
+                cart.Show();
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form3 cart = new Form3(label4.Text);
-            cart.Show();
+            if (Session.IsLoggedIn)
+            {
+                OrderManager.AddOrder(label4.Text, Session.Username, 0m, string.Empty, null);
+                MessageBox.Show($"{label4.Text} added to Your Orders.", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                Form3 cart = new Form3(label4.Text);
+                cart.Show();
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form3 cart = new Form3(label5.Text);
-            cart.Show();
+            if (Session.IsLoggedIn)
+            {
+                OrderManager.AddOrder(label5.Text, Session.Username, 0m, string.Empty, null);
+                MessageBox.Show($"{label5.Text} added to Your Orders.", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                Form3 cart = new Form3(label5.Text);
+                cart.Show();
+            }
         }
 
 
-        private void flowProducts_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-        }
 
         private void label14_Click(object sender, EventArgs e)
         {
@@ -391,26 +159,46 @@ namespace Visual.Programming.Project.Grey
 
         private void button10_Click_1(object sender, EventArgs e)
         {
-            Form3 cart = new Form3(label8.Text);
-            cart.Show();
+            if (Session.IsLoggedIn)
+            {
+                OrderManager.AddOrder(label8.Text, Session.Username, 0m, string.Empty, null);
+                MessageBox.Show($"{label8.Text} added to Your Orders.", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                Form3 cart = new Form3(label8.Text);
+                cart.Show();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int speed = 6;
+            const int speed = 6;
 
             lblPerks.Left -= speed;
             lblSubtitle.Left -= speed;
 
             if (lblPerks.Right <= 0)
-                lblPerks.Left = panelBanner.Width;
+            {
+                lblPerks.Left = lblSubtitle.Right;
+            }
 
             if (lblSubtitle.Right <= 0)
-                lblSubtitle.Left = panelBanner.Width;
+            {
+                lblSubtitle.Left = lblPerks.Right;
+            }
         }
 
         private void lblPerks_Click_1(object sender, EventArgs e)
         {
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            login lg= new login();
+            lg.Show();
         }
     }
 }

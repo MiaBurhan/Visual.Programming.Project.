@@ -44,134 +44,64 @@ namespace Visual.Programming.Project.Grey
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        // Centralized handler: if user is logged in add directly to orders, otherwise open checkout Form3
+        private void TryAddProduct(object sender)
         {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
+            if (!(sender is Button clickedButton))
+                return;
 
-                Form3 cartForm = new Form3(productName);
+            string productName = clickedButton.Tag?.ToString() ?? "Product";
+
+            if (Session.IsLoggedIn)
+            {
+                OrderManager.AddOrder(productName, Session.Username, 0m, string.Empty, null);
+                MessageBox.Show($"{productName} added to Your Orders.", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // show the orders form
+                //var orders = new Form4();
+                //orders.Show();
+            }
+            else
+            {
+                using Form3 cartForm = new Form3(productName);
                 cartForm.ShowDialog();
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
+        private void button7_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
+        private void button1_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
+        private void button2_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
+        private void button6_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
+        private void button3_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
+        private void button4_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
+        private void button5_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
+        private void button8_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
+        private void button9_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
+        private void button10_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            if (sender is Button clickedButton)
-            {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3(productName);
-                cartForm.ShowDialog();
-            }
-        }
+        private void button11_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (sender is Button clickedButton)
+            // this button previously opened an empty checkout form; preserve behavior for logged-out users
+            if (Session.IsLoggedIn)
             {
-                string productName = clickedButton.Tag?.ToString() ?? "Product";
-
-                Form3 cartForm = new Form3();
+                MessageBox.Show("No product selected.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var orders = new Form4();
+                orders.Show();
+            }
+            else
+            {
+                using Form3 cartForm = new Form3();
                 cartForm.ShowDialog();
             }
         }
@@ -181,71 +111,27 @@ namespace Visual.Programming.Project.Grey
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button1_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button2_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button6_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button8_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button8_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button9_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button9_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button18_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button5_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button20_Click(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button20_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button19_Click(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button19_Click(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button3_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            Form3 cart = new Form3();
-            cart.Show();
-        }
+        private void button4_Click_1(object sender, EventArgs e) => TryAddProduct(sender);
 
 
         private void label28_Click(object sender, EventArgs e)
@@ -253,6 +139,11 @@ namespace Visual.Programming.Project.Grey
             HomeForm f1 = new HomeForm();
             f1.Show();
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
-using Microsoft.Data.SqlClient;
-using System.Data;
 
 namespace Visual.Programming.Project.Grey
 {
@@ -36,105 +34,85 @@ namespace Visual.Programming.Project.Grey
         {
             string name = textBox1.Text.Trim();
             string email = textBox2.Text.Trim();
+            // textBox5 holds the debit card (formatted with dashes), textBox3 holds the address
+            string cardNumberRaw = textBox5.Text.Trim();
             string address = textBox3.Text.Trim();
-            string phone = textBox4.Text.Trim();
-            string card = textBox5.Text.Trim();
 
-            if (name == "")
+            // Name Validation
+            if (string.IsNullOrWhiteSpace(name))
             {
                 MessageBox.Show("Please enter your name.");
+                textBox1.Focus();
                 return;
             }
 
-            if (email == "")
+            // Email Validation
+            if (string.IsNullOrWhiteSpace(email))
             {
                 MessageBox.Show("Please enter your email.");
+                textBox2.Focus();
                 return;
             }
 
-            if (address == "")
+            if (!Regex.IsMatch(email,
+                @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Please enter a valid email address.");
+                textBox2.Focus();
+                return;
+            }
+
+            // Card Number Validation
+            // Allow formatted input (dashes) in the UI; validate using digits only
+            string cardDigits = new string(cardNumberRaw.Where(char.IsDigit).ToArray());
+
+            if (string.IsNullOrWhiteSpace(cardNumberRaw) || cardDigits.Length == 0)
+            {
+                MessageBox.Show("Please enter debit card number.");
+                textBox5.Focus();
+                return;
+            }
+
+            if (cardDigits.Length != 16)
+            {
+                MessageBox.Show("Debit card number must be 16 digits.");
+                textBox5.Focus();
+                return;
+            }
+
+            // Address Validation
+            if (string.IsNullOrWhiteSpace(address))
             {
                 MessageBox.Show("Please enter your address.");
+                // address is stored in textBox3
+                textBox3.Focus();
                 return;
             }
 
-            if (phone == "")
+            // Product Validation
+            if (string.IsNullOrWhiteSpace(_productName))
             {
-                MessageBox.Show("Please enter your phone number.");
+                MessageBox.Show("No product selected.");
                 return;
             }
 
-            if (card == "")
-            {
-                MessageBox.Show("Please enter your debit card number.");
-                return;
-            }
+            // Persist the order via OrderManager so All Orders view updates
+            var created = OrderManager.AddOrder(_productName, name, 0m, email, null);
+            CreatedOrder = created;
 
-            try
-            {
-                SqlConnection con = new SqlConnection();
+            MessageBox.Show(
+                $"Product: {_productName}\n\n" +
+                $"Customer: {name}\n" +
+                $"Email: {email}\n\n" +
+                $"Order Placed Successfully!",
+                "Order Confirmed",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
 
-                con.Open();
-
-                string sql = @"INSERT INTO Orders
-        (
-            User_Name,
-            User_Email,
-            Address,
-            Phone,
-            Debit_Card,
-            Product_Name,
-            Product_Price
-        )
-        VALUES
-        (
-            @User_Name,
-            @User_Email,
-            @Address,
-            @Phone,
-            @Debit_Card,
-            @Product_Name,
-            @Product_Price
-        )";
-
-                SqlCommand cmd = new SqlCommand(sql, con);
-
-                cmd.Parameters.AddWithValue("@User_Name", name);
-                cmd.Parameters.AddWithValue("@User_Email", email);
-                cmd.Parameters.AddWithValue("@Address", address);
-                cmd.Parameters.AddWithValue("@Phone", phone);
-                cmd.Parameters.AddWithValue("@Debit_Card", card);
-
-                // Product Name
-                cmd.Parameters.AddWithValue("@Product_Name", _productName);
-
-                // Product Price (abhi 0 save hoga)
-                cmd.Parameters.AddWithValue("@Product_Price", 0);
-
-                cmd.ExecuteNonQuery();
-
-                con.Close();
-
-                MessageBox.Show(
-                    "Order Placed Successfully!",
-                    "Success",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-                textBox4.Clear();
-                textBox5.Clear();
-
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             // placeholder for designer event
@@ -216,4 +194,3 @@ namespace Visual.Programming.Project.Grey
         }
     }
 }
-    

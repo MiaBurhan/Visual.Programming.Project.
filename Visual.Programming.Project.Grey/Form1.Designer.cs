@@ -55,10 +55,12 @@
             panel12 = new Panel();
             button9 = new Button();
             panel3 = new Panel();
+            label3 = new Label();
             label4 = new Label();
             panel11 = new Panel();
             button1 = new Button();
             panel7 = new Panel();
+            label10 = new Label();
             panel9 = new Panel();
             label9 = new Label();
             button2 = new Button();
@@ -74,7 +76,6 @@
             panel13 = new Panel();
             button10 = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
-            timer2 = new System.Windows.Forms.Timer(components);
             panel14 = new Panel();
             panelBanner = new Panel();
             pictureBox4 = new PictureBox();
@@ -83,6 +84,7 @@
             label1 = new Label();
             lblLimitedTime = new Label();
             panel5 = new Panel();
+            button11 = new Button();
             button8 = new Button();
             button7 = new Button();
             button6 = new Button();
@@ -91,9 +93,8 @@
             label31 = new Label();
             label32 = new Label();
             panel4 = new Panel();
+            label11 = new Label();
             label6 = new Label();
-            label10 = new Label();
-            label3 = new Label();
             panel10.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -424,6 +425,17 @@
             panel3.Size = new Size(358, 487);
             panel3.TabIndex = 16;
             // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label3.ForeColor = Color.DarkRed;
+            label3.Location = new Point(20, 344);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(143, 34);
+            label3.TabIndex = 10;
+            label3.Text = "Rs. 200,00";
+            // 
             // label4
             // 
             label4.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -473,6 +485,17 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(358, 487);
             panel7.TabIndex = 15;
+            // 
+            // label10
+            // 
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label10.ForeColor = Color.DarkRed;
+            label10.Location = new Point(24, 344);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(143, 34);
+            label10.TabIndex = 3;
+            label10.Text = "Rs. 500,00";
             // 
             // panel9
             // 
@@ -745,6 +768,7 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(button11);
             panel5.Controls.Add(button8);
             panel5.Controls.Add(button7);
             panel5.Controls.Add(button6);
@@ -756,6 +780,22 @@
             panel5.Size = new Size(1144, 63);
             panel5.TabIndex = 6;
             // 
+            // button11
+            // 
+            button11.BackColor = Color.FromArgb(19, 25, 33);
+            button11.FlatAppearance.BorderSize = 0;
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button11.ForeColor = Color.White;
+            button11.Location = new Point(989, 6);
+            button11.Margin = new Padding(4);
+            button11.Name = "button11";
+            button11.Size = new Size(160, 50);
+            button11.TabIndex = 9;
+            button11.Text = "Login";
+            button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
+            // 
             // button8
             // 
             button8.BackColor = Color.FromArgb(19, 25, 33);
@@ -763,7 +803,7 @@
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(963, 5);
+            button8.Location = new Point(798, 6);
             button8.Margin = new Padding(4);
             button8.Name = "button8";
             button8.Size = new Size(160, 50);
@@ -779,12 +819,12 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(720, 11);
+            button7.Location = new Point(618, 6);
             button7.Margin = new Padding(4);
             button7.Name = "button7";
             button7.Size = new Size(160, 50);
             button7.TabIndex = 7;
-            button7.Text = "All Products";
+            button7.Text = "All";
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click_1;
             // 
@@ -795,7 +835,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(503, 4);
+            button6.Location = new Point(455, 6);
             button6.Margin = new Padding(4);
             button6.Name = "button6";
             button6.Size = new Size(160, 50);
@@ -811,10 +851,10 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(279, 3);
+            button5.Location = new Point(273, 6);
             button5.Margin = new Padding(4);
             button5.Name = "button5";
-            button5.Size = new Size(203, 50);
+            button5.Size = new Size(160, 50);
             button5.TabIndex = 5;
             button5.Text = "Your order ";
             button5.UseVisualStyleBackColor = false;
@@ -827,7 +867,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(97, 1);
+            button4.Location = new Point(97, 6);
             button4.Margin = new Padding(4);
             button4.Name = "button4";
             button4.Size = new Size(160, 50);
@@ -862,6 +902,7 @@
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(19, 25, 33);
+            panel4.Controls.Add(label11);
             panel4.Controls.Add(label6);
             panel4.Controls.Add(label32);
             panel4.Controls.Add(label31);
@@ -876,6 +917,17 @@
             panel4.TabIndex = 4;
             panel4.Paint += panel4_Paint;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Century Gothic", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(255, 128, 0);
+            label11.Location = new Point(1708, 21);
+            label11.Name = "label11";
+            label11.Size = new Size(55, 34);
+            label11.TabIndex = 12;
+            label11.Text = ".....";
+            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -889,28 +941,6 @@
             label6.Size = new Size(176, 63);
             label6.TabIndex = 11;
             label6.Text = "ShopHub";
-            // 
-            // label10
-            // 
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label10.ForeColor = Color.DarkRed;
-            label10.Location = new Point(24, 344);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(143, 34);
-            label10.TabIndex = 3;
-            label10.Text = "Rs. 500,00";
-            // 
-            // label3
-            // 
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(20, 344);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(143, 34);
-            label3.TabIndex = 10;
-            label3.Text = "Rs. 200,00";
             // 
             // HomeForm
             // 
@@ -991,7 +1021,6 @@
         private Label label5;
         private Label label8;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
         private Panel panel14;
         private Panel panelBanner;
         private PictureBox pictureBox4;
@@ -1011,5 +1040,7 @@
         private Label label6;
         private Label label3;
         private Label label10;
+        private Button button11;
+        private Label label11;
     }
 }
